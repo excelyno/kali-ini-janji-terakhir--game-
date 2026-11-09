@@ -9,25 +9,32 @@ namespace kali_ini_janji_terakhir.Forms
 {
     public class GamePanel : Panel
     {
+        private readonly GameRenderer renderer;
+
         public GamePanel()
         {
-            InitializePanel();
+            renderer = new GameRenderer();
 
-        }
-        private void InitializePanel()
-        {
             Dock = DockStyle.Fill;
             BackColor = Color.Black;
-
             DoubleBuffered = true;
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
+
             renderer.Render(e.Graphics);
         }
 
-        private readonly GameRenderer renderer = new GameRenderer();
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                renderer.Dispose();
+            }
+
+            base.Dispose(disposing);
+        }
     }
 }

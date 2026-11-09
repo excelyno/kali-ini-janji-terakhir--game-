@@ -4,6 +4,8 @@ using System.Text;
 using System.Drawing;
 
 
+using System.Drawing;
+
 namespace kali_ini_janji_terakhir.Maps
 {
     public class Tile
@@ -25,10 +27,15 @@ namespace kali_ini_janji_terakhir.Maps
 
         public Rectangle GetBounds()
         {
-            return new Rectangle(GridX * TileSize, GridY * TileSize, TileSize, TileSize);
+            return new Rectangle(
+                GridX * TileSize,
+                GridY * TileSize,
+                TileSize,
+                TileSize
+            );
         }
 
-        public void Draw(Graphics graphics)
+        public void Render(Graphics graphics)
         {
             graphics.DrawImage(Texture, GetBounds());
         }
