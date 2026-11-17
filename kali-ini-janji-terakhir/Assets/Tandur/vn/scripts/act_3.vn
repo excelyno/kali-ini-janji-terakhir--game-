@@ -1,0 +1,13 @@
+# Babak 3: Kemarau. The crisis at the middle of the story.
+label start
+: Pagi itu tidak ada embun. Langit biru tanpa satu pun awan, dan udara berbau debu.
+show lastri at=left expr=worried
+show wira at=right expr=worried
+lastri: Kemarau. Aku sudah melihatnya dua kali seumur hidupku. Sungai akan surut, air terjun berhenti.
+wira: Menyiram akan lebih melelahkan. Tapi justru karena semua ladang kering, harga sayur di lapak naik.
+lastri(neutral): Yang bertahan bukan yang paling kuat. Yang bertahan adalah yang menabung sebelum kemarau datang.
+wira(neutral): Kemarau ini berlangsung satu musim penuh. Jangan menanam lebih banyak dari yang sanggup kau siram.
+hide lastri
+hide wira
+: (Kemarau: menyiram butuh energi lebih, tapi hasil panen terjual 25% lebih mahal.)
+end

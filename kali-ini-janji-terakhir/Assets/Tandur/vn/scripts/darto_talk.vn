@@ -1,0 +1,65 @@
+# Lapak Pak Darto: beli benih, jual hasil panen.
+label start
+show darto at=center expr=neutral
+if darto_met goto again
+set darto_met = true
+darto: Nah, ini dia petani baru! Aku Darto. Lapak ini buka tiap hari, hujan atau terik.
+darto(happy): Benih di sini segar semua. Hasil panenmu juga kubeli dengan harga adil.
+goto shop
+
+label again
+darto(happy): Ah, {player_name}! Mau belanja atau jual hasil panen?
+
+label shop
+menu
+* Beli benih lobak (10 keping) -> buy_turnip
+* Beli benih wortel (14 keping) -> buy_carrot
+* Beli benih tomat (22 keping) -> buy_tomato
+* Jual semua hasil panen -> sell
+* Ada tips bertani? -> tips
+* Sampai nanti -> bye
+
+label buy_turnip
+if gold < 10 goto poor
+set gold -= 10
+emit give_item turnip_seed 1
+darto(happy): Satu benih lobak. Cepat tumbuh, cocok buat pemula.
+goto shop
+
+label buy_carrot
+if gold < 14 goto poor
+set gold -= 14
+emit give_item carrot_seed 1
+darto(happy): Wortel, pilihan bagus. Harganya paling menguntungkan.
+goto shop
+
+label buy_tomato
+if gold < 22 goto poor
+set gold -= 22
+emit give_item tomato_seed 1
+darto(happy): Tomat! Lama tumbuhnya, tapi bisa dipanen berkali-kali.
+goto shop
+
+label poor
+darto(worried): Keping emasmu belum cukup. Jual dulu hasil panen, ya.
+goto shop
+
+label sell
+emit sell_all
+if last_sale > 0 goto sold
+darto(neutral): Belum ada yang bisa kubeli. Bawa dulu hasil panenmu.
+goto shop
+
+label sold
+darto(happy): Bagus sekali! Pak Darto bayar tunai, {last_sale} keping emas.
+goto shop
+
+label tips
+darto(neutral): Cangkul tanahnya, tanam benih, lalu siram. Tanaman hanya tumbuh pada malam hari setelah disiram.
+darto(happy): Lupa menyiram berarti sehari terbuang. Tomat bisa dipanen berulang, jadi hemat benih.
+goto shop
+
+label bye
+darto(happy): Hati-hati di jalan!
+hide darto
+end

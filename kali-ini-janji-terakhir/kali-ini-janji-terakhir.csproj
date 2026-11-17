@@ -10,9 +10,30 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Assets\FileAssets\**\*.png">
+    <None Update="Assets\Tandur\**\*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <!-- Sprite hasil AssetGen/generate.py, peta, dan font untuk versi WinForms. -->
+    <None Update="Assets\Sprites\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\Maps\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Assets\Fonts\**\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Remove="AssetGen\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Panel OpenGL masih eksperimen dan belum memakai arsitektur FarmWorld yang baru. -->
+    <Compile Remove="Forms\GLGamePanel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.8.2" />
+    <PackageReference Include="OpenTK.GLControl" Version="4.0.2" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,21 @@
+# Story beat: who Pak Rentenir really is.
+label start
+show rentenir at=center expr=neutral
+rentenir: Kau membawa sesuatu.
+: Kau menyerahkan surat dari lentera. Pak Rentenir membacanya dua kali. Tangannya, yang selalu mantap memegang pena, gemetar.
+rentenir(worried): "Semoga cahaya ini menunjukkan jalan pulang." ...Dia masih menulis seperti itu.
+rentenir(neutral): Namaku Harun. Dulu aku juru hitung koperasi lembah ini, sebelum koperasinya bangkrut dihantam kemarau.
+rentenir: Uang yang kupinjamkan pada Sekar adalah seluruh tabunganku. Kalau sumur itu gagal, aku ikut habis.
+show mira at=left expr=surprised
+mira: ...Ayah?
+rentenir(surprised): Mira.
+mira(worried): Selama ini orang bilang Ayah memeras lembah. Aku malu. Aku pindah ke dermaga supaya tak perlu menjawab mereka.
+rentenir(worried): Aku membiarkan mereka berkata begitu. Lebih mudah ditakuti daripada menjelaskan.
+rentenir(neutral): Lihat buku ini, kalian berdua. Separuh dari setiap bunga yang dibayar kucatat di kolom lain: "Kas Koperasi Sekar".
+rentenir: Itu idenya. Bunga bukan untuk memperkaya satu orang. Bunga itu modal, supaya tak ada lagi yang terpaksa berutang saat kemarau berikutnya.
+mira(happy): Jadi Ayah bukan penagih. Ayah bendahara.
+rentenir(happy): Bendahara yang galak. Dan ini bagianmu, {player_name}: tiga ratus keping dari bunga yang sudah kau bayar. Hakmu sebagai anggota pertama.
+hide mira
+rentenir(neutral): Sekarang lunasi sisanya. Bukan demi aku. Demi orang yang sedang dalam perjalanan pulang.
+hide rentenir
+end

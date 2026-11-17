@@ -1,0 +1,9 @@
+# Babak 4: Lentera. The rain returns; Sekar's lanterns light up.
+label start
+: Malam itu hujan pertama turun. Tanah menghirupnya dalam-dalam.
+: Lalu, satu per satu, lentera-lentera tua di bukit dan di tepi air terjun menyala sendiri.
+show mira at=center expr=surprised
+mira: Kau lihat itu?! Lentera Sekar! Kata ibuku, lentera itu hanya menyala kalau ada yang menunggu di ujung jalan.
+mira(happy): Air terjunnya mengalir lagi. Ayo, ikuti cahayanya. Mungkin di sana ada jawaban soal Sekar.
+hide mira
+end

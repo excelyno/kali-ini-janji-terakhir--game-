@@ -1,0 +1,38 @@
+{
+ "turnip_seed": {
+  "name": "Benih Lobak",
+  "kind": "seed",
+  "buy": 10,
+  "desc": "Benih segar. Tanam di tanah kebun yang sudah dicangkul."
+ },
+ "carrot_seed": {
+  "name": "Benih Wortel",
+  "kind": "seed",
+  "buy": 14,
+  "desc": "Benih segar. Tanam di tanah kebun yang sudah dicangkul."
+ },
+ "tomato_seed": {
+  "name": "Benih Tomat",
+  "kind": "seed",
+  "buy": 22,
+  "desc": "Benih segar. Tanam di tanah kebun yang sudah dicangkul."
+ },
+ "turnip": {
+  "name": "Lobak",
+  "kind": "produce",
+  "sell": 22,
+  "desc": "Hasil panenmu. Jual ke Pak Darto di alun-alun."
+ },
+ "carrot": {
+  "name": "Wortel",
+  "kind": "produce",
+  "sell": 32,
+  "desc": "Hasil panenmu. Jual ke Pak Darto di alun-alun."
+ },
+ "tomato": {
+  "name": "Tomat",
+  "kind": "produce",
+  "sell": 20,
+  "desc": "Hasil panenmu. Jual ke Pak Darto di alun-alun."
+ }
+}

@@ -1,0 +1,22 @@
+label start
+if act >= 4 and not mem_lantern goto memory
+if act >= 4 goto lit
+: Sebuah lentera tua di tiang kayu. Kacanya berdebu dan sumbunya sudah lama padam.
+: Seseorang sengaja memasangnya di sini, menghadap ke arah jalan keluar lembah.
+end
+
+label lit
+: Lentera itu menyala hangat. Cahayanya memantul di permukaan air.
+end
+
+label memory
+bg sepia
+wait 0.4
+: Sekar menyalakan lentera ini sebelum berangkat ke kota, membawa gerobak penuh hasil panen lembah.
+: "Kalau pasar di kota mau membeli langsung dari kita, tak ada lagi yang perlu berutang untuk bertahan."
+: "Dan kalau aku belum kembali... semoga cahaya ini menunjukkan jalan pulang." 
+bg none
+emit memory lantern
+set mem_lantern = true
+: (Kenangan Sekar ditemukan.)
+end

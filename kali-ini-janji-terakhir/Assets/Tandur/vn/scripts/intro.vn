@@ -1,0 +1,12 @@
+# Opening cutscene, played once when a new game starts.
+label start
+bg dawn
+wait 0.4
+: Fajar menyingsing di Lembah Sekar. Kabut tipis masih melayang di atas ladang tua yang lama tak terurus.
+: Surat dari bibimu hanya berisi satu kalimat:\n"Ladang ini milikmu sekarang. Jangan biarkan ia mati."
+: Di bawahnya ada catatan lusuh:\n"Utang 6.000 keping pada Pak Rentenir. Lunasi sebelum bunganya memakan ladang ini."
+: Kau menarik napas dalam-dalam. Udara pagi berbau tanah basah, dan sedikit harapan.
+: (Berjalan dengan W A S D, tahan Shift untuk berlari. Tekan E untuk berbicara atau memeriksa sesuatu.)
+set intro_done = true
+bg none
+end

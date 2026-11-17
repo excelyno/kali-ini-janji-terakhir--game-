@@ -1,0 +1,17 @@
+label start
+if act >= 2 and not mem_well goto memory
+: Sumur batu dengan atap kecil. Kau menjatuhkan kerikil, dan beberapa saat kemudian terdengar "plung" yang jernih.
+: Airnya masih ada. Itu kabar baik untuk seorang petani.
+end
+
+label memory
+bg sepia
+wait 0.4
+: Sepuluh tahun lalu. Kemarau panjang, ladang-ladang retak.
+: Seorang perempuan muda menggali bersama para tetangga, siang dan malam. Di tangannya, sebuah buku pinjaman bersampul cokelat.
+: "Kalau sumur ini berair, satu lembah selamat. Utangnya biar aku yang tanggung." 
+bg none
+emit memory well
+set mem_well = true
+: (Kenangan Sekar ditemukan.)
+end

@@ -1,0 +1,42 @@
+# Bu Sari, the rice farmer by the paddies.
+label start
+show sari at=center expr=neutral
+if sari_met goto again
+set sari_met = true
+sari: Oh! Kau yang menghidupkan lagi kebun Sekar. Aku Sari. Sawah di sini garapanku.
+sari(happy): Jalan saja di pematangnya, jangan injak padinya. Lumpurnya dalam, sandalmu bisa hilang.
+goto ask
+
+label again
+sari(happy): Halo, {player_name}. Padiku sudah setinggi lutut, lihat?
+
+label ask
+menu
+* Kenapa sawah harus digenangi air? -> water
+* Apa bedanya sawah dan kebunku? -> diff
+* Bagaimana sawahmu saat kemarau? -> dry if act >= 3
+* Sampai nanti -> bye
+
+label water
+sari(neutral): Air menahan gulma dan menjaga suhu akar. Tapi airnya harus mengalir pelan, bukan diam. Air diam itu sarang nyamuk.
+goto ask
+
+label diff
+sari(neutral): Padi panennya sekali semusim. Hasilnya besar, tapi lama. Sayurmu panennya cepat, uangnya berputar tiap beberapa hari.
+sari(happy): Yang bijak punya dua-duanya: satu untuk makan setahun, satu untuk belanja seminggu.
+goto ask
+
+label dry
+if act >= 4 goto wet
+sari(worried): Retak semua. Aku cuma bisa menyelamatkan satu petak dengan air dari sumur.
+sari(neutral): Tahun depan aku mau gali embung kecil. Menampung hujan itu menabung juga, tahu.
+goto ask
+
+label wet
+sari(happy): Waktu hujan pertama turun, aku menangis di pematang. Jangan bilang siapa-siapa.
+goto ask
+
+label bye
+sari(happy): Hati-hati di jalan. Kalau lelah, gubuk itu terbuka untuk siapa saja.
+hide sari
+end

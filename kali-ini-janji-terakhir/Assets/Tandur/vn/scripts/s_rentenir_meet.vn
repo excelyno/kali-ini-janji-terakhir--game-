@@ -1,0 +1,25 @@
+# Story beat: the moneylender states his terms.
+label start
+set rentenir_met = true
+show rentenir at=center expr=neutral
+rentenir: Jadi kau yang menempati ladang Sekar. Orang memanggilku Pak Rentenir. Tidak ada yang repot mengingat namaku.
+rentenir: Enam ribu keping. Bunga {t_rate} persen tiap awal musim, dihitung dari sisa utang. Cicilan minimal {t_min} keping per musim.
+rentenir(worried): Telat membayar: denda, dan bunganya naik. Aku selalu menyebut angkanya di depan. Yang jahat itu bunga yang disembunyikan.
+menu
+* Kenapa Bapak mau meminjamkan sebanyak itu? -> why
+* Aku akan melunasinya -> vow
+
+label why
+rentenir(neutral): Karena waktu itu tak ada orang lain yang mau. Dan karena Sekar menulis rencananya di buku, baris demi baris.
+rentenir: Orang yang mencatat biasanya membayar.
+goto close
+
+label vow
+rentenir(surprised): Semua orang bilang begitu di hari pertama.
+rentenir(neutral): Buktikan dengan cicilan pertama. Musim pertama ini kuberi tenggang: tanpa bunga, tanpa denda.
+
+label close
+hide rentenir
+: Dari balik lapak, Mira memperhatikan kalian. Begitu Pak Rentenir menoleh, gadis itu buru-buru pergi.
+: (Bicara lagi pada Pak Rentenir kapan pun kau siap membayar.)
+end

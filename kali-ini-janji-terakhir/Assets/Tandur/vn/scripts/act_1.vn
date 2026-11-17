@@ -1,0 +1,9 @@
+# Babak 1: Bertahan. Plays once the first soil is turned.
+label start
+show wira at=center expr=happy
+wira: Nah, begitu! Tanah yang dicangkul itu tanda ada yang mau tinggal.
+wira(neutral): Kabut di lembah ini tebal karena terlalu lama tak ada yang menyalakan dapur. Kalau ladang hidup, kabutnya pergi.
+wira: Tujuanmu sederhana: tanam, jual di lapak Darto, dan cicil utang pada Pak Rentenir sebelum musim berganti.
+wira(happy): Lihat papan kecil di pojok kiri atas itu. Tekan Q kalau lupa apa yang harus dikerjakan.
+hide wira
+end

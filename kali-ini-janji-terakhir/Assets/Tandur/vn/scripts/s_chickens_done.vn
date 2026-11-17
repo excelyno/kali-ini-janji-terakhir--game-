@@ -1,0 +1,10 @@
+label start
+show wira at=left expr=happy
+show bayu at=right expr=happy
+wira: Tiga-tiganya pulang! Kakiku sudah tidak sanggup main kejar-kejaran begitu.
+bayu: Kakak larinya cepat juga! Hampir secepat aku.
+wira(neutral): Pintu kandang harus diperbaiki sebelum malam. Begitu juga keuangan: lubang kecil ditambal selagi kecil.
+wira(happy): Ini benih wortel dan sedikit keping. Jangan ditolak. Itu upah, bukan sedekah.
+hide wira
+hide bayu
+end

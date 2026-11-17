@@ -1,0 +1,18 @@
+# Story beat: the soup kitchen. Needs 5 produce of any kind.
+label start
+show lastri at=center expr=neutral
+lastri: Dapur umum sudah berasap. Aku butuh lima hasil panen apa saja. Lobak, wortel, tomat, semuanya jadi sup.
+emit take_produce 5
+if gave_ok goto thanks
+lastri(worried): Belum cukup lima, ya? Tak apa. Panen dulu, lalu kembalilah.
+hide lastri
+end
+
+label thanks
+set kitchen_done = true
+lastri(happy): Cukup untuk dua belas mangkuk! Bayu, antar ke rumah Kakek Wira dulu.
+lastri(neutral): Waktu kemarau besar dulu, aku kehilangan seluruh panen. Aku menanam satu jenis saja dan tak punya simpanan.
+lastri: Sejak itu aku selalu membagi tiga: sepertiga dijual, sepertiga ditanam lagi, sepertiga disimpan.
+lastri(happy): Ini dari kas dapur umum. Semua orang patungan untukmu.
+hide lastri
+end

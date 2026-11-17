@@ -1,0 +1,9 @@
+{
+  "turnip_first":   {"title": "Mencabut Lobak",   "crop": "turnip", "text": "Lobak adalah tanaman umbi. Umbinya tumbuh di dalam tanah, jadi harus dicabut pelan dan lurus agar akar dan umbinya tidak patah."},
+  "turnip_perfect": {"title": "Tanah Gembur",     "crop": "turnip", "text": "Tanah yang gembur dan lembap membuat umbi mudah dicabut. Itulah mengapa petani mencangkul tanah dulu sebelum menanam."},
+  "carrot_first":   {"title": "Menarik Wortel",   "crop": "carrot", "text": "Wortel harus ditarik lurus ke atas. Kalau ditarik miring, wortel mudah patah atau tumbuh bercabang."},
+  "carrot_perfect": {"title": "Wortel dan Mata",  "crop": "carrot", "text": "Wortel kaya beta-karoten. Tubuh mengubahnya menjadi vitamin A yang baik untuk kesehatan mata."},
+  "tomato_first":   {"title": "Memetik Tomat",    "crop": "tomato", "text": "Tomat dipetik saat sudah merah karena sudah matang dan manis. Tomat hijau belum matang, rasanya asam dan keras."},
+  "tomato_perfect": {"title": "Panen Berkala",    "crop": "tomato", "text": "Tomat berbuah terus-menerus. Memetik buah yang matang secara berkala membuat tanaman terus berbunga dan berbuah."},
+  "block_first":    {"title": "Menanam Berkelompok", "crop": null, "text": "Menanam berkelompok memudahkan menyiram dan memanen. Tetap beri jarak agar akar tanaman tidak berebut air dan makanan."}
+}

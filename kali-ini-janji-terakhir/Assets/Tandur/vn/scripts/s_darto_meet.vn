@@ -1,0 +1,12 @@
+# Story beat: Pak Darto hands over the first seeds.
+label start
+set darto_met = true
+show darto at=center expr=happy
+darto: Nah, ini dia pewaris ladang Sekar! Aku Darto. Semua yang tumbuh di lembah ini lewat lapakku.
+darto(neutral): Bibimu dulu pelanggan terbaikku. Dan lawan tawar-menawar paling alot.
+darto(happy): Ini tiga benih lobak, gratis. Anggap saja modal perkenalan. Yang berikutnya bayar, ya!
+emit give_item turnip_seed 3
+darto(neutral): Hitung dulu sebelum menanam: lobak murah dan cepat, wortel paling untung, tomat lama tapi berbuah berkali-kali.
+darto: Bicara lagi padaku kalau mau belanja atau menjual panen.
+hide darto
+end

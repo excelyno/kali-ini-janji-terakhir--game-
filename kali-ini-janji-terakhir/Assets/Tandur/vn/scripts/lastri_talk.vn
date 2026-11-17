@@ -1,0 +1,32 @@
+label start
+show lastri at=center expr=neutral
+if lastri_met goto again
+set lastri_met = true
+lastri: Oh, tetangga baru! Aku Lastri. Kalau mau teh hangat, rumahku selalu terbuka.
+lastri(happy): Ayam-ayam di ladang itu jinak. Mereka suka mengikuti orang yang membawa benih.
+goto menu_main
+
+label again
+lastri(happy): Halo lagi, {player_name}. Cuaca bagus untuk bertani, ya.
+
+label menu_main
+menu
+* Kau sudah lama tinggal di sini? -> long
+* Bagaimana pendapatmu soal ladangku sekarang? -> opinion if chapter >= 2
+* Sampai nanti -> bye
+
+label long
+lastri(neutral): Sejak kecil. Aku sudah melihat ladang itu berganti tangan empat kali.
+lastri(worried): Tapi tidak ada yang bertahan melewati satu musim penuh. Semoga kau berbeda.
+goto menu_main
+
+label opinion
+lastri(happy): Aku sudah empat kali melihat orang menyerah di sini. Kau yang pertama bertahan melewati musim kedua.
+lastri(neutral): Rahasianya sederhana: kau menabung sebagian, membayar tepat waktu, dan tidak menanam semuanya dari satu jenis.
+lastri(worried): Menanam satu jenis saja berisiko. Kalau harganya jatuh atau hama datang, habis semuanya.
+goto menu_main
+
+label bye
+lastri(happy): Semoga panenmu melimpah.
+hide lastri
+end

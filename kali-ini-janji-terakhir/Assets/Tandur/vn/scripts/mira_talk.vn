@@ -1,0 +1,53 @@
+# Mira, by the pond. Reacts to what the player already did elsewhere (cross-script flags).
+label start
+show mira at=center expr=neutral
+if mira_met goto again
+set mira_met = true
+mira: Kau yang baru tiba di ladang Sekar, kan? Kabarnya sudah sampai ke kolam sejak subuh.
+if wira_met goto knows_wira
+mira(surprised): Kau belum bertemu Kakek Wira? Dia pasti sudah menunggumu dari tadi. Orangnya di dekat rumah.
+goto menu_main
+
+label knows_wira
+mira(happy): Kakek Wira sudah menyapamu? Bagus. Biasanya dia butuh seminggu untuk berani menyapa orang baru.
+goto menu_main
+
+label again
+mira(happy): Halo lagi, {player_name}.
+
+label menu_main
+menu
+* Kolam ini dalam? -> pond
+* Ikan apa saja yang ada di sini? -> fish
+* Kau tahu sesuatu soal hutan pinus? -> pines
+* Ada kabar baru dari lembah? -> news if chapter >= 2
+* Sampai nanti -> bye
+
+label pond
+mira(neutral): Dangkal di pinggir, dalam di tengah. Jangan berenang sendirian kalau belum kenal arusnya.
+goto menu_main
+
+label fish
+mira(happy): Ikan mas, lele, kadang belut kalau hujan. Nanti kalau kau punya pancing, aku ajari lemparan yang benar.
+goto menu_main
+
+label pines
+mira(worried): Pohon-pohon itu tidak berbahaya. Hanya... kadang ada lampu kecil bergerak di antara batangnya.
+mira(surprised): Jangan bilang Kakek Wira aku yang cerita. Dia bisa mengomel seminggu penuh.
+goto menu_main
+
+label news
+if chapter >= 3 goto news3
+mira(happy): Kata orang, sejak ladang Sekar hidup lagi, pedagang mulai mampir ke lembah.
+mira: Aku jadi punya pembeli ikan tetap. Jadi... terima kasih sudah bertani.
+goto menu_main
+
+label news3
+mira(surprised): Aku menemukan ini di tepi hutan: secarik surat dari Sekar. Katanya, "Kalau ladang ini bangkit sebelum aku pulang, kuncinya ada pada kesabaran dan pembukuan."
+mira(happy): Pembukuan? Itu yang selalu dikerjakan Pak Rentenir, tahu. Dia lebih baik dari kelihatannya.
+goto menu_main
+
+label bye
+mira(happy): Sampai nanti! Kalau panenmu bagus, jangan lupa bagi-bagi.
+hide mira
+end

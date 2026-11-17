@@ -1,0 +1,14 @@
+label start
+: PAPAN PENGUMUMAN DESA SEKAR
+: "Pasar Pak Darto buka setiap hari. Benih segar, hasil panen dibeli tunai."
+: "Ingat: tanaman hanya tumbuh setelah disiram. Tidurlah sebelum tengah malam."
+menu
+* Lihat misi dan utang -> quests
+* Tutup papan -> bye
+
+label quests
+emit open_quests
+end
+
+label bye
+end

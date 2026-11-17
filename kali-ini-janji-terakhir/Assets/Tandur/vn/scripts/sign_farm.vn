@@ -1,0 +1,6 @@
+label start
+: Papan kayu tua. Tulisannya sudah pudar dimakan hujan:
+: "LADANG SEKAR\nRawat tanahnya, ia akan merawatmu."
+: Di bawahnya ada goresan kecil, mungkin dari pisau saku: "Jalan ke barat menuju bukit. Ke timur, kolam."
+set read_sign = true
+end

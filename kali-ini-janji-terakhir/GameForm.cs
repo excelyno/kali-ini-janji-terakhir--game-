@@ -17,7 +17,7 @@ namespace kali_ini_janji_terakhir
             KeyDown += (_, e) => { panel.KeyDownEvt(e.KeyCode); e.Handled = true; e.SuppressKeyPress = true; };
             KeyUp += (_, e) => panel.KeyUpEvt(e.KeyCode);
             MouseWheel += (_, e) => panel.WheelEvt(e.Delta);
-            panel.MouseWheel += (_, e) => panel.WheelEvt(e.Delta);
+            // panel.MouseWheel += (_, e) => panel.WheelEvt(e.Delta); // Removed to prevent double trigger
             Deactivate += (_, _) => panel.LoseFocusEvt();
         }
     }

@@ -2,38 +2,43 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using kali_ini_janji_terakhir.Core.Economy;
 
 namespace kali_ini_janji_terakhir.Farm
 {
-    public record SoilSave(int X, int Y, bool Watered, int Crop, int Age);
+    public record PlotSave(int X, int Y, bool Watered, string? Crop, int Age);
 
     public record SaveData(
+        int Version,
         int Day,
-        float Tm,
-        int Gold,
-        int Wood,
-        int Stone,
+        float Minutes,
+        int Coins,
+        int TotalEarned,
         float Energy,
-        float Water,
+        int Water,
         int WaterCap,
-        int[] Seeds,
-        int[] Crops,
-        List<SoilSave> Soil,
+        Dictionary<string, int> Items,
+        List<PlotSave> Plots,
         List<int> Removed,
+        List<int> EggsTaken,
+        List<string> Flags,
         float Px,
-        float Py
+        float Py,
+        DebtSave Debt,
+        int QuestIndex,
+        int QuestProgress,
+        List<int>? Stumps
     );
 
-    /// <summary>
-    /// Handles persisting and restoring the player's farm progress to/from local storage.
-    /// </summary>
+    /// <summary>Menyimpan dan memuat progres ke %APPDATA%/KaliIniJanjiTerakhir. Ditulis atomik (file .tmp lalu ganti).</summary>
     public static class SaveSystem
     {
+        public const int Version = 3;   // v3: peta tile baru (farm.txt), tunggul pohon
+
         public static string SavePath => Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
             "KaliIniJanjiTerakhir",
-            "save.json"
-        );
+            "save_v3.json");
 
         public static bool HasSave => File.Exists(SavePath);
 
@@ -43,7 +48,9 @@ namespace kali_ini_janji_terakhir.Farm
             {
                 string? dir = Path.GetDirectoryName(SavePath);
                 if (dir != null) Directory.CreateDirectory(dir);
-                File.WriteAllText(SavePath, JsonSerializer.Serialize(data));
+                string tmp = SavePath + ".tmp";
+                File.WriteAllText(tmp, JsonSerializer.Serialize(data));
+                File.Move(tmp, SavePath, overwrite: true);
             }
             catch (Exception ex)
             {
@@ -56,7 +63,8 @@ namespace kali_ini_janji_terakhir.Farm
             try
             {
                 if (!HasSave) return null;
-                return JsonSerializer.Deserialize<SaveData>(File.ReadAllText(SavePath));
+                var d = JsonSerializer.Deserialize<SaveData>(File.ReadAllText(SavePath));
+                return d != null && d.Version == Version ? d : null;
             }
             catch (Exception ex)
             {
@@ -78,4 +86,3 @@ namespace kali_ini_janji_terakhir.Farm
         }
     }
 }
-

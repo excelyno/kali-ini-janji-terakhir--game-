@@ -1,0 +1,11 @@
+label start
+if act == 3 goto dry
+: Sebuah lentera batu kecil di tepi mata air. Dari sela bebatuan, air jernih merembes dan mengalir ke selatan.
+: Inilah hulu sungai desa: dari sini ke jembatan papan, lalu ke kolam teratai di bawah rumahmu.
+: Di kaki lentera terukir: "Jaga hulunya, maka hilirnya menjagamu."
+end
+
+label dry
+: Mata air itu tinggal rembesan basah di batu. Lentera batunya berdebu.
+: Seseorang menaruh segenggam bunga liar di kakinya. Masih segar.
+end

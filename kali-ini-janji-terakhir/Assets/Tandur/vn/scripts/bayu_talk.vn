@@ -1,0 +1,42 @@
+# Bayu, the village kid. He never stands still.
+label start
+show bayu at=center expr=happy
+if bayu_met goto again
+set bayu_met = true
+bayu: Kakak yang tinggal di rumah Bibi Sekar, kan? Aku Bayu! Aku tahu semua tempat rahasia di lembah ini.
+goto ask
+
+label again
+bayu: Kak {player_name}! Mau dengar rahasia?
+
+label ask
+menu
+* Ceritakan satu rahasia -> secret
+* Hewan apa saja yang ada di desa? -> animals
+* Kenapa kau tidak pernah diam? -> run
+* Dah, Bayu -> bye
+
+label secret
+if act >= 2 goto secret2
+bayu(neutral): Di selatan kebun Kakak ada api unggun yang tak pernah padam. Duduk di sana malam-malam, kunang-kunangnya banyak sekali.
+bayu(happy): Terus di utara ada mata air, hulunya sungai kita. Ada lentera batu di sana. Nenek bilang jangan buang sampah di situ.
+goto ask
+
+label secret2
+bayu(surprised): Aku pernah lihat lampu kecil di air terjun barat, padahal lenteranya mati! Mira bilang aku mengigau.
+bayu(neutral): Kalau Kakak ke bukit, naiknya lewat tangga batu. Jalannya miring, jadi tekan dua tombol arah sekaligus.
+goto ask
+
+label animals
+bayu(happy): Si Belang, anjing alun-alun. Elus dia, nanti dia ikut Kakak ke mana-mana. Kucing oren di rumah Kakak namanya Jahe.
+bayu(neutral): Bebek di kolam, kambing Kakek Wira, lebah Nenek di kebun buah. Lebahnya jangan diganggu. Tanpa lebah, pohonnya tak berbuah.
+goto ask
+
+label run
+bayu(happy): Kata Nenek, kakiku seperti air sungai. Kalau diam, jadi sarang nyamuk!
+goto ask
+
+label bye
+bayu(happy): Dah! Aku mau kejar kupu-kupu dulu!
+hide bayu
+end

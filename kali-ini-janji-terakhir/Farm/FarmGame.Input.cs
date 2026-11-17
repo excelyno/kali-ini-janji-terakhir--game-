@@ -1,76 +1,71 @@
-using System;
+using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
+using kali_ini_janji_terakhir.Core.Entities.Props;
+using kali_ini_janji_terakhir.Farm.Engine;
+using kali_ini_janji_terakhir.Farm.Ui;
 
 namespace kali_ini_janji_terakhir.Farm
 {
     public sealed partial class FarmGame
     {
-        public void Resize(int w, int h)
+        private const float MouseAimSeconds = 3f;   // mouse dipakai untuk membidik selama 3 detik setelah digerakkan
+        private Point lastMouse;
+        private float mouseAimTimer;
+        private bool waitForRelease;   // setelah menutup jendela dengan Spasi/klik, jangan langsung mengayun alat
+
+        /// <summary>Jendela terbuka: semua tombol yang baru ditekan diteruskan ke jendela teratas.</summary>
+        private void HandleWindowInput(UiWindow top)
         {
-            vw = Math.Max(100, w);
-            vh = Math.Max(100, h);
+            foreach (var key in Input.PressedKeys) top.HandleKey(key, world);
+            if (Input.LeftClicked) top.Click(world);
+            waitForRelease = true;
         }
 
-        public void LoseFocus()
+        private void HandleGameplayInput(float dt)
         {
-            held.Clear();
-            if (started && !won) paused = true;
+            var player = world.Player;
+
+            // ---- menu dan tombol sekali tekan
+            if (Input.WasPressed(Keys.Escape, Keys.P)) { OpenPause(); return; }
+            if (Input.WasPressed(Keys.Q, Keys.Tab)) { Open(new JournalWindow()); return; }
+            if (Input.WasPressed(Keys.F3)) view.ShowDebug = !view.ShowDebug;
+            if (Input.WasPressed(Keys.F5)) { Save(); world.Say("Permainan disimpan."); }
+            if (Input.WasPressed(Keys.Z)) TrySleep();
+
+            int slot = Input.PressedNumber();
+            if (slot >= 0) player.ActiveSlot = slot;
+            if (Input.WheelSteps != 0) player.ActiveSlot += Input.WheelSteps;
+
+            // ---- bidikan: mouse (jika baru digerakkan) atau arah hadap
+            if (Input.Mouse != lastMouse) { lastMouse = Input.Mouse; mouseAimTimer = MouseAimSeconds; }
+            mouseAimTimer -= dt;
+            player.Aim(mouseAimTimer > 0 ? MouseTile() : null);
+
+            // ---- aksi: Spasi/klik kiri = alat (tahan untuk mengulang), E/klik kanan = interaksi
+            if (Input.WasPressed(Keys.E) || Input.RightClicked) world.FindInteractable()?.Interact(world);
+            bool toolHeld = Input.IsHeld(Keys.Space) || Input.LeftHeld;
+            if (!toolHeld) waitForRelease = false;
+            else if (!waitForRelease) player.UseActiveTool(world);
+
+            // ---- gerak
+            var (dx, dy) = Input.MoveAxis;
+            player.Control(dx, dy, Input.IsHeld(Keys.ShiftKey), dt, world);
         }
 
-        public void KeyUp(Keys k) => held.Remove(k);
-
-        public void Wheel(int delta)
+        private Point MouseTile()
         {
-            if (started && !shopOpen && !paused)
-                slot = (slot + (delta > 0 ? 7 : 1)) % 8;
+            var p = camera.ScreenToWorld(Input.Mouse);
+            return TileMap.TileAt(p.X, p.Y);
         }
 
-        public void Click()
+        private void TrySleep()
         {
-            if (!started)
-            {
-                started = true;
-                held.Clear();
-                return;
-            }
-            if (!shopOpen && !paused && !won)
-                UseTool();
+            var house = world.Objects.OfType<House>().FirstOrDefault();
+            if (house != null && house.InRange(world)) house.Interact(world);
+            else world.Say("Tidur hanya bisa di depan pintu rumah.");
         }
 
-        public void KeyDown(Keys k)
-        {
-            bool fresh = held.Add(k);
-            if (!fresh) return;
-
-            if (won)
-            {
-                if (k == Keys.R || k == Keys.Enter) RestartRequested = true;
-                else if (k == Keys.Escape || k == Keys.M) ExitRequested = true;
-                return;
-            }
-
-            if (paused)
-            {
-                if (k == Keys.P || k == Keys.Escape || k == Keys.Enter) paused = false;
-                else if (k == Keys.M) { Save(); ExitRequested = true; }
-                return;
-            }
-
-            if (shopOpen)
-            {
-                if (k == Keys.Up || k == Keys.W) shopSel = (shopSel + 7) % 8;
-                else if (k == Keys.Down || k == Keys.S) shopSel = (shopSel + 1) % 8;
-                else if (k == Keys.Enter || k == Keys.Space) Buy(shopSel);
-                else if (k == Keys.Escape || k == Keys.E) shopOpen = false;
-                return;
-            }
-
-            if (k == Keys.P || k == Keys.Escape) paused = true;
-            else if (k >= Keys.D1 && k <= Keys.D8) slot = k - Keys.D1;
-            else if (k == Keys.Space) UseTool();
-            else if (k == Keys.E) Interact();
-            else if (k == Keys.Z) SleepNow();
-        }
+        private void OpenPause() => Open(new PauseWindow(Save, () => ExitRequested = true));
     }
 }
-

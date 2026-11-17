@@ -1,0 +1,101 @@
+{
+ "wira": {
+  "name": "Kakek Wira",
+  "color": "#8fcf7a",
+  "portrait": "portrait_wira",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "mira": {
+  "name": "Mira",
+  "color": "#f0a468",
+  "portrait": "portrait_mira",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "darto": {
+  "name": "Pak Darto",
+  "color": "#e0b050",
+  "portrait": "portrait_darto",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "lastri": {
+  "name": "Bu Lastri",
+  "color": "#d48ab8",
+  "portrait": "portrait_lastri",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "rentenir": {
+  "name": "Pak Rentenir",
+  "color": "#b05a6a",
+  "portrait": "portrait_rentenir",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "bayu": {
+  "name": "Bayu",
+  "color": "#f5d442",
+  "portrait": "portrait_bayu",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "sari": {
+  "name": "Bu Sari",
+  "color": "#7fb3e0",
+  "portrait": "portrait_sari",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "joko": {
+  "name": "Pak Joko",
+  "color": "#6fc0b8",
+  "portrait": "portrait_joko",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ },
+ "sekar": {
+  "name": "Sekar",
+  "color": "#b99ae0",
+  "portrait": "portrait_sekar",
+  "expressions": [
+   "neutral",
+   "happy",
+   "worried",
+   "surprised"
+  ]
+ }
+}

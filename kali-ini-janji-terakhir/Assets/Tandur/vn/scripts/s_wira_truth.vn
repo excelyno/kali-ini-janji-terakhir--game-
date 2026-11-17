@@ -1,0 +1,20 @@
+# Story beat: Wira's regret.
+label start
+show wira at=center expr=surprised
+wira: Topi pet cokelat. Sempoa. Sumur... Dari mana kau tahu semua itu?
+wira(neutral): Duduklah. Sudah waktunya kau dengar dari mulutku sendiri.
+wira(worried): Waktu kemarau besar, Sekar minta aku jadi penjamin utangnya. Aku menolak. Kubilang lembah ini sudah habis, lebih baik kita semua pindah.
+wira: Dia tetap meminjam. Sendirian. Sumurnya berair, dan lembah ini selamat. Sejak itu aku tak pernah berani menatap matanya lama-lama.
+menu
+* Kakek menjaga ladangnya tiga musim. Itu juga berarti -> kind
+* Siapa Harun? -> harun
+
+label kind
+wira(happy): ...Kau memang keponakannya. Dia juga selalu mencari sisi baik orang, bahkan saat orangnya tak pantas.
+
+label harun
+wira(neutral): Harun? Itu nama yang sudah lama tak dipakai. Tanyakan pada orangnya sendiri, kalau waktunya tiba.
+wira: Sekarang naiklah ke Bukit Batu di utara. Ada bangku tua di puncaknya. Sekar selalu ke sana sebelum mengambil keputusan besar.
+wira(worried): Dan lihat sungainya baik-baik dari atas. Aku punya firasat tidak enak soal musim depan.
+hide wira
+end

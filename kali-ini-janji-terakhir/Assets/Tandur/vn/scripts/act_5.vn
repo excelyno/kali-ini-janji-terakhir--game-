@@ -1,0 +1,54 @@
+# Epilog: Festival Panen. Four endings, depending on how the game was played.
+label start
+bg festival
+wait 0.5
+: Tiga hari setelah utang terakhir dibayar, Lembah Sekar menggelar Festival Panen pertamanya dalam sepuluh tahun.
+: Lentera digantung dari rumah ke rumah. Kakek Wira menabuh kentongan. Bayu berlarian membawa umbul-umbul. Pak Darto memborong semua tomat.
+show rentenir at=center expr=happy
+rentenir: Aku membawa buku catatanku untuk terakhir kalinya. Lihat halaman ini: lunas. Ditulis dengan tinta merah.
+rentenir(neutral): Sekar meminjam untuk menggali sumur bagi seluruh lembah. Kau melunasinya. Dua orang, satu janji.
+hide rentenir
+if not shared_water goto gate
+show lastri at=center expr=happy
+lastri: Dan saat kemarau, anak ini membuka sumurnya untuk semua orang. Aku masih menyimpan mangkuk sup hari itu.
+hide lastri
+
+label gate
+: Di gerbang desa, seseorang turun dari gerobak pedagang. Rambutnya lebih putih daripada di foto, tapi senyumnya sama.
+show sekar at=center expr=happy
+sekar: Jadi kau yang menyalakan lagi dapur rumah itu.
+if ending == "penjaga" goto penjaga
+if ending == "gigih" goto gigih
+if ending == "cepat" goto cepat
+goto tekun
+
+label penjaga
+sekar(surprised): Kau menemukan semua kenanganku. Sumur, kincir, pohon tua, lentera...
+sekar(happy): Aku pergi supaya ladang ini punya pembeli. Kau tinggal supaya ladang ini punya penjaga. Lembah ini butuh keduanya.
+: AKHIR: PENJAGA KENANGAN
+goto close
+
+label gigih
+sekar(happy): Harun bilang kau beberapa kali telat membayar. Aku juga dulu begitu.
+sekar(neutral): Yang penting bukan tidak pernah jatuh. Yang penting kau tetap kembali ke ladang setiap pagi.
+: AKHIR: PETANI YANG GIGIH
+goto close
+
+label cepat
+sekar(surprised): Secepat itu? Kau lebih disiplin daripada aku.
+sekar(happy): Bunga yang kau hemat itu sekarang jadi modal. Pakailah untuk ladang yang lebih luas.
+: AKHIR: SI TELITI
+goto close
+
+label tekun
+sekar(happy): Musim demi musim. Tidak terburu-buru, tidak menyerah. Begitulah cara ladang tumbuh.
+: AKHIR: TANGAN YANG TEKUN
+
+label close
+sekar(neutral): Jalan ke kota sudah jadi. Mulai musim depan, hasil lembah ini dijual langsung, tanpa tengkulak, tanpa utang darurat.
+hide sekar
+: Malam itu seluruh lembah menari di bawah lentera. Utang sudah lunas, tapi ceritamu belum.
+: TAMAT. Ladangmu tetap menunggu: tanam, panen, jelajahi, dan teruslah tumbuh.
+set festival_done = true
+bg none
+end

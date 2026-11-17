@@ -1,0 +1,11 @@
+# Event day: the dream.
+label start
+bg sepia
+wait 0.5
+: Malam itu kau bermimpi. Atau mungkin lembah ini yang bermimpi, dan kau hanya menumpang.
+: Dua orang muda berdiri di tepi sumur yang baru digali. Seorang perempuan dengan buku cokelat. Seorang laki-laki dengan sempoa.
+: "Hitunganmu nekat, Sekar."\n"Dan hitunganmu selalu benar, Harun. Karena itu aku butuh kau."
+: Di belakang mereka seorang lelaki yang lebih tua menggeleng, lalu berbalik pergi. Topi pet-nya cokelat dan lusuh.
+bg none
+: Kau terbangun. Topi itu... kau melihatnya setiap hari. Di kepala Kakek Wira.
+end

@@ -1,0 +1,28 @@
+# Story beat: the first meeting with Kakek Wira.
+label start
+set wira_met = true
+show wira at=center expr=surprised
+wira: Eh?! Ada asap dari cerobong rumah Sekar! Sudah tiga musim tempat itu gelap.
+wira(neutral): Kau pasti keponakannya. Matamu persis Sekar kalau sedang keras kepala.
+wira(happy): Aku Wira, tetangga sebelah. Panggil saja Kakek. Kambing di kandang itu milikku, jangan kaget kalau mereka mengembik subuh-subuh.
+wira(worried): Sekar menitipkan kunci ladang padaku, lalu berangkat ke kota. Katanya sebentar. Itu tiga musim yang lalu.
+menu
+* Bibi tidak bilang mau ke mana? -> where
+* Aku cuma punya surat dan setumpuk utang -> debt
+
+label where
+wira(neutral): Dia cuma bilang, "Kalau aku belum pulang, akan ada yang datang menggantikanku." Rupanya orang itu kau.
+goto give
+
+label debt
+wira(worried): Enam ribu keping pada Pak Rentenir. Aku tahu. Seluruh lembah tahu.
+wira(neutral): Tapi utang itu ada ceritanya, Nak. Nanti kau akan mengerti. Sekarang urus perutmu dulu.
+
+label give
+wira(happy): Cangkul lamanya sudah kuasah. Dan ini lima benih lobak dari gudangku.
+emit give_item turnip_seed 5
+set wira_gift = true
+wira: Kebun berpagar di selatan alun-alun itu milikmu. Ikuti penanda emas di layar, ia selalu menunjuk tujuanmu berikutnya.
+wira(happy): Cangkul enam petak dulu. Tanah yang dicangkul itu tanda ada yang mau tinggal.
+hide wira
+end

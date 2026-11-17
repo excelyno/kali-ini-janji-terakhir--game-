@@ -3,13 +3,28 @@ namespace kali_ini_janji_terakhir
     internal static class Program
     {
         /// <summary>
-        ///  The main entry point for the application.
+        /// Titik masuk.
+        ///   (tanpa argumen)      : Kebun versi WinForms (sprite dari Assets/Sprites).
+        ///   --tandur             : versi OpenGL (OpenTK) lama.
+        ///   --snapshot out.png   : alat developer, simpan screenshot permainan lalu keluar.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            if (args.Contains("--tandur"))
+            {
+                using var tandur = new Tandur.TandurGame(Tandur.LaunchOptions.Parse(args));
+                tandur.Run();
+                return;
+            }
+
+            int snap = Array.IndexOf(args, "--snapshot");
+            if (snap >= 0)
+            {
+                Farm.DevTools.Snapshot.Run(snap + 1 < args.Length ? args[snap + 1] : "snapshot.png");
+                return;
+            }
+
             ApplicationConfiguration.Initialize();
             Application.Run(new GameForm());
         }

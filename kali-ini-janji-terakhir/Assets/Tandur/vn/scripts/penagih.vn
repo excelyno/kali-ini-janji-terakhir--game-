@@ -1,0 +1,40 @@
+# The season-start visit from Pak Rentenir: reports interest, and any late fee.
+label start
+show rentenir at=center expr=neutral
+: Pagi-pagi, terdengar ketukan di pintu. Pak Rentenir berdiri di beranda dengan buku catatannya.
+if col_grace goto grace
+if col_missed goto missed
+rentenir(happy): Musim baru, dan cicilanmu tepat waktu. Bagus.
+rentenir: Bunga musim ini {t_interest} keping. Sisa utangmu sekarang {t_debt} keping.
+rentenir(neutral): Pertahankan kebiasaan itu.
+goto done
+
+label grace
+rentenir(happy): Musim pertama sudah lewat. Ini masa tenggang, jadi belum ada bunga.
+rentenir: Mulai musim depan, bunga 5% berjalan. Cicilan minimum {t_min} keping per musim. Sisa utangmu {t_debt} keping.
+rentenir(neutral): Mencicil lebih awal berarti bunga lebih kecil. Ingat itu.
+goto done
+
+label missed
+rentenir(worried): Awal musim. Cicilan minimalmu kurang {t_short} keping.
+rentenir: Denda {t_fee} keping, dan bunga naik menjadi {t_rate}%. Bunga musim ini {t_interest} keping. Sisa utangmu {t_debt}.
+menu
+* Bayar cicilan sekarang -> pay
+* Aku belum sanggup -> later
+
+label pay
+emit pay_debt min
+if pay_ok goto paid
+rentenir(neutral): Keping emasmu belum cukup. Kita bertemu lagi musim depan.
+goto done
+
+label paid
+rentenir(happy): Diterima, {pay_amount} keping. Ingat, makin cepat dibayar makin murah.
+goto done
+
+label later
+rentenir(worried): Baik. Tapi bunga tidak menunggu siapa pun.
+
+label done
+hide rentenir
+end

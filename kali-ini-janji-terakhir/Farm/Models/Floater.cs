@@ -2,25 +2,31 @@ using System.Drawing;
 
 namespace kali_ini_janji_terakhir.Farm
 {
-    /// <summary>
-    /// Temporary floating text animation displayed when gathering resources, harvesting, or taking actions.
-    /// </summary>
-    public class Floater
+    /// <summary>Teks melayang singkat ("+3 Kayu", "Disiram") yang naik lalu memudar.</summary>
+    public sealed class Floater
     {
-        public string Text { get; set; } = "";
-        public float X { get; set; }
-        public float Y { get; set; }
-        public float Life { get; set; } = 1.4f;
-        public Color Color { get; set; }
+        private const float Lifetime = 1.4f;
+        private float life = Lifetime;
 
-        /// <summary>
-        /// Convenient alias for <see cref="Color"/>.
-        /// </summary>
-        public Color C
+        public Floater(string text, Color color, float x, float y)
         {
-            get => Color;
-            set => Color = value;
+            Text = text;
+            Color = color;
+            X = x;
+            Y = y;
+        }
+
+        public string Text { get; }
+        public Color Color { get; }
+        public float X { get; }
+        public float Y { get; private set; }
+        public float Alpha => System.Math.Clamp(life, 0f, 1f);
+        public bool IsDead => life <= 0;
+
+        public void Update(float dt)
+        {
+            life -= dt;
+            Y -= 30 * dt;
         }
     }
 }
-

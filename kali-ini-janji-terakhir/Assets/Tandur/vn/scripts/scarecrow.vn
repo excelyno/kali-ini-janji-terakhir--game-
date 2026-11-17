@@ -1,0 +1,23 @@
+label start
+if act >= 2 and not mem_scarecrow goto memory
+: Orang-orangan sawah dengan topi jerami miring. Satu kancing bajunya dari tutup botol.
+if scarecrow_greeted goto again
+set scarecrow_greeted = true
+: Kau mengangguk sopan padanya. Rasanya itu hal yang benar untuk dilakukan.
+end
+
+label again
+: Ia tetap diam. Tapi kau yakin burung-burung sedikit lebih gugup hari ini.
+end
+
+label memory
+bg sepia
+wait 0.4
+: Di saku orang-orangan sawah terselip secarik kertas yang sudah menguning.
+: "Untuk siapa pun yang meneruskan ladang ini: tanam lobak dulu. Cepat panen, murah benihnya. Belajarlah dari yang kecil."
+: Tulisannya miring, persis tulisan di surat warisanmu.
+bg none
+emit memory scarecrow
+set mem_scarecrow = true
+: (Kenangan Sekar ditemukan.)
+end

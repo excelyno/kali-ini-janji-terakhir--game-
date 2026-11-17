@@ -1,0 +1,43 @@
+# Pak Joko, the old fisherman.
+label start
+show joko at=center expr=neutral
+if joko_met goto again
+set joko_met = true
+joko: Sst. Pelan-pelan. Ikan mas di sini bisa mendengar langkah orang kota.
+joko(happy): Aku Joko. Sudah empat puluh tahun memancing di kolam ini, dan ikannya masih lebih pintar dariku.
+goto ask
+
+label again
+joko(neutral): Kau lagi. Duduklah, asal jangan berisik.
+
+label ask
+menu
+* Bagaimana menebak cuaca besok? -> weather
+* Bapak kenal Sekar? -> sekar
+* Mira itu anak siapa? -> mira if act >= 2
+* Sampai nanti -> bye
+
+label weather
+joko(neutral): Lihat bebeknya. Kalau mereka mandi ribut-ribut sore hari, besok hujan. Kalau burung terbang rendah, angin datang.
+joko(happy): Atau lihat saja jam di pojok layar. Di sebelahnya tertulis cuaca hari ini. Hujan berarti kau tak perlu menyiram.
+goto ask
+
+label sekar
+joko(neutral): Sekar? Dia menghitung segalanya. Berapa ember air, berapa langkah ke pasar, berapa keping untung per petak.
+joko(happy): Tapi tiap sore dia tetap duduk di bangku tepi kolam teratai itu, tidak menghitung apa-apa. Katanya, kepala juga perlu disiram.
+goto ask
+
+label mira
+if act >= 4 goto mira_known
+joko(worried): Hmm. Itu bukan ceritaku untuk diceritakan.
+joko(neutral): Tapi perhatikan siapa yang diam-diam menaruh ikan asin di depan pintu Pak Rentenir tiap akhir pekan.
+goto ask
+
+label mira_known
+joko(happy): Sekarang semua sudah tahu, kan? Aku menahan rahasia itu sepuluh tahun. Leganya seperti melepas ikan besar.
+goto ask
+
+label bye
+joko(neutral): Hm. Jangan injak jaringku.
+hide joko
+end

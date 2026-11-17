@@ -1,0 +1,5 @@
+{
+  "turnip": {"name": "Lobak",  "seed": "turnip_seed", "produce": "turnip", "stage_days": [1, 1, 2], "regrow_days": null},
+  "carrot": {"name": "Wortel", "seed": "carrot_seed", "produce": "carrot", "stage_days": [1, 2, 2], "regrow_days": null},
+  "tomato": {"name": "Tomat",  "seed": "tomato_seed", "produce": "tomato", "stage_days": [2, 2, 3], "regrow_days": 2}
+}

@@ -1,0 +1,11 @@
+
+label start
+: Lingkaran batu tegak, masing-masing setinggi dada. Di permukaannya terukir gambar matahari, hujan, daun, dan butiran salju.
+: Empat musim. Para petani dulu memakai batu ini sebagai kalender, jauh sebelum ada buku catatan.
+if act >= 3 goto drought_hint
+end
+
+label drought_hint
+: Di batu terakhir ada ukiran kecil: sebuah lumbung penuh. Di bawahnya, matahari tanpa awan.
+: Pesannya jelas: simpan saat panen melimpah, karena kemarau selalu kembali.
+end

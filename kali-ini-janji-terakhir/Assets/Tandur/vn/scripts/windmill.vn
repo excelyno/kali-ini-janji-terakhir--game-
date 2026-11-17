@@ -1,0 +1,17 @@
+label start
+if act >= 2 and not mem_windmill goto memory
+: Kincir angin tua. Bilahnya berputar pelan, berderit seperti sedang bernyanyi.
+: Dulu gandum dari seluruh Sekar digiling di sini. Mungkin suatu hari akan beroperasi lagi.
+end
+
+label memory
+bg sepia
+wait 0.4
+: Sekar duduk di tangga kincir, menghitung keping di pangkuannya.
+: "Bunga lima persen tiap musim. Kalau aku bayar tiga ratus tiap musim, butuh..." Ia mencoret-coret, lalu tersenyum.
+: "Bisa. Asal aku tidak pernah berhenti mencatat." 
+bg none
+emit memory windmill
+set mem_windmill = true
+: (Kenangan Sekar ditemukan.)
+end

@@ -1,0 +1,78 @@
+# Pak Rentenir: the moneylender. Pay your inheritance debt here, any time, no pressure.
+label start
+show rentenir at=center expr=neutral
+if debt_free goto lunas
+if rentenir_met goto again
+set rentenir_met = true
+rentenir: Jadi kau pewaris ladang Sekar. Aku dipanggil Pak Rentenir.
+rentenir(neutral): Sebelum pergi, Sekar meminjam 6.000 keping padaku. Kini utang itu jadi tanggunganmu.
+rentenir: Aku tidak mengejarmu tiap hari. Bayarlah kapan saja. Tapi tiap awal musim, bunga {t_rate}% ditambahkan pada sisa utangmu.
+rentenir(worried): Dan kalau cicilan minimal musim itu belum kau bayar, ada denda. Camkan.
+goto pay_menu
+
+label again
+rentenir: Sisa utangmu {t_debt} keping. Cicilan minimal musim ini kurang {t_left} keping.
+
+label pay_menu
+menu
+* Bayar cicilan minimal -> pay_min
+* Bayar 1.000 keping -> pay_big
+* Bayar semua yang kupunya -> pay_max
+* Bagaimana cara kerja bunga? -> explain
+* Kenapa Bapak mau meminjamkan pada Sekar? -> backstory if chapter >= 2
+* Nanti saja -> bye
+
+label pay_min
+emit pay_debt min
+goto after_pay
+
+label pay_big
+emit pay_debt big
+goto after_pay
+
+label pay_max
+emit pay_debt max
+goto after_pay
+
+label after_pay
+if debt_free goto lunas_now
+if pay_ok goto paid
+rentenir(worried): Keping emasmu tidak cukup, Nak. Jual dulu hasil panenmu di lapak Pak Darto.
+goto pay_menu
+
+label paid
+rentenir(happy): Diterima, {pay_amount} keping. Sisa utangmu {t_debt}.
+goto pay_menu
+
+label explain
+rentenir(neutral): Bunga itu biaya meminjam uang. Bunga {t_rate}% dari {t_debt} keping, dihitung tiap musim.
+rentenir: Makin kecil sisa utangmu, makin kecil bunganya. Karena itu membayar lebih cepat selalu lebih murah.
+rentenir(worried): Telat membayar membuat bunga naik dan kena denda. Utang kecil yang dibiarkan bisa menjadi besar.
+goto pay_menu
+
+label backstory
+rentenir(neutral): Waktu kemarau itu tidak ada yang berani meminjamkan pada petani. Terlalu berisiko, kata mereka.
+rentenir: Bunga itu bayaran atas risiko yang kutanggung. Bukan kejahatan, selama kedua pihak mengerti aturannya.
+rentenir(worried): Yang jahat adalah bunga yang disembunyikan. Karena itu aku selalu menyebut angkanya di depanmu.
+goto pay_menu
+
+label lunas_now
+rentenir(surprised): ...Lunas? Seluruh utang Sekar sudah kau bayar?
+rentenir(happy): Aku tidak menyangka. Kebanyakan orang menyerah di musim kedua.
+rentenir(neutral): Datanglah ke gerbang desa dalam beberapa hari. Ada seseorang yang ingin bertemu denganmu.
+goto lunas_end
+
+label lunas
+show rentenir at=center expr=happy
+rentenir(happy): Utangmu sudah lunas, {player_name}. Aku tidak akan datang menagih lagi.
+
+label lunas_end
+rentenir(neutral): Satu nasihat dariku: catat pemasukan dan pengeluaranmu, dan jangan berutang untuk hal yang tak menghasilkan.
+rentenir(happy): Kebun ini sekarang benar-benar milikmu. Kerja bagus.
+hide rentenir
+end
+
+label bye
+rentenir(neutral): Ingat, bunga tidak pernah tidur.
+hide rentenir
+end

@@ -1,0 +1,10 @@
+# Babak 2: Akar. The first installment is paid; the valley opens.
+label start
+: Malam itu, untuk pertama kalinya, kabut di tepi desa tersingkap.
+: Di kejauhan terlihat bukit-bukit batu, padang yang luas, dan bunyi air terjun yang samar.
+show wira at=center expr=neutral
+wira: Cicilan pertamamu sampai juga. Pak Rentenir tidak bilang apa-apa, tapi aku lihat dia tersenyum.
+wira(happy): Lembah ini mulai percaya padamu. Jelajahi bukit-bukit itu. Ada bangku-bangku tua di puncaknya, tempat Sekar biasa duduk.
+wira(worried): Satu lagi. Kalau kau melihat benda-benda tua di desa ini, sumur, kincir, orang-orangan sawah... periksalah. Sekar meninggalkan jejak di mana-mana.
+hide wira
+end

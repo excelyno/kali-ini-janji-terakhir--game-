@@ -1,0 +1,36 @@
+# Event: the village meeting at the start of the drought. One choice with a lasting consequence.
+label start
+: Kentongan dipukul tiga kali. Semua orang berkumpul di alun-alun, dan tak seorang pun tersenyum.
+show lastri at=left expr=worried
+show darto at=right expr=worried
+lastri: Mata air tinggal setetes. Sawah Sari retak. Kalau begini terus, sepuluh hari lagi tak ada yang bisa dipanen.
+darto: Aku pedagang, bukan penjahat. Tapi kalau barang langka, harga naik. Itu bukan mauku. Itu hukum pasar.
+hide darto
+show rentenir at=right expr=neutral
+rentenir: Aku bisa meminjamkan untuk pompa air. Bunganya sembilan persen.
+lastri(surprised): Sembilan?! Di tengah kemarau?
+rentenir(worried): Risiko naik, bunga naik. Aku tidak menyembunyikan angkanya.
+: Semua mata beralih padamu. Sumur Sekar, satu-satunya yang masih berair, ada di halaman rumahmu.
+menu
+* Sumur itu digali untuk seluruh lembah. Pakailah bersama -> share
+* Aku butuh airnya untuk melunasi utang. Maaf -> keep
+
+label share
+set shared_water = true
+lastri(happy): ...Persis seperti bibimu.
+rentenir(surprised): Kau sadar itu berarti kebunmu sendiri dapat jatah lebih sedikit?
+: Kau mengangguk. Pak Rentenir menulis sesuatu di bukunya, lama sekali, lalu menutupnya tanpa berkata apa-apa.
+: (Berbagi sumur: menyiram makin berat selama kemarau, tapi Pak Darto memberimu harga sahabat untuk seterusnya.)
+goto close
+
+label keep
+set shared_water = false
+lastri(neutral): Aku tidak menyalahkanmu. Utang enam ribu bukan beban kecil.
+rentenir(neutral): Keputusan yang masuk akal. Tapi ingat, hitungan yang benar belum tentu hitungan yang cukup.
+
+label close
+hide rentenir
+lastri(neutral): Aku akan buka dapur umum. Siapa pun yang punya hasil panen lebih, bawa ke rumahku. Tak ada yang boleh tidur lapar.
+hide lastri
+set meeting_done = true
+end

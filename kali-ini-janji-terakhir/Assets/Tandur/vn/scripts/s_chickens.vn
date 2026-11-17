@@ -1,0 +1,10 @@
+# Event day: the chickens escaped.
+label start
+show bayu at=center expr=surprised
+bayu: Kak! Kak! Bangun! Gawat!
+bayu(worried): Tadi malam angin merobohkan pintu kandang Kakek Wira. Ayam-ayamnya kabur ke seluruh desa!
+bayu(neutral): Aku Bayu, cucunya Bu Lastri. Aku sudah coba kejar, tapi mereka lebih pintar dari kelihatannya.
+bayu(happy): Triknya: jangan kejar lurus. Pojokkan ke pagar, tembok, atau air, lalu tekan E. Ada tiga ekor!
+hide bayu
+: (Ayam yang lepas menjauh kalau didekati. Giring ke sudut, lalu tangkap dengan E.)
+end

@@ -1,0 +1,71 @@
+# Kakek Wira, the neighbour. Shows: flags, branching, repeatable menu, item events, conditions.
+label start
+if wira_met goto again
+set wira_met = true
+show wira at=center expr=surprised
+wira: Eh?! Ada orang di ladang Sekar! Sudah tiga musim tempat ini sepi.
+wira(neutral): Kau pasti keponakannya. Matamu persis seperti Sekar kalau sedang keras kepala.
+wira(happy): Aku Wira. Tetangga di balik bukit sana. Panggil saja Kakek.
+goto ask
+
+label again
+show wira at=center expr=happy
+wira: Ah, {player_name}! Ada yang mau kau tanyakan lagi?
+
+label ask
+menu
+* Ceritakan tentang ladang ini -> farm
+* Siapa Sekar sebenarnya? -> sekar
+* Kenapa Sekar berutang? -> why if chapter >= 2
+* Soal rahasia Sekar... -> secret if chapter >= 3
+* Apa yang sebaiknya kulakukan dulu? -> todo
+* Ada hadiah untuk pendatang baru? -> gift if not wira_gift
+* Cukup dulu, Kek. Terima kasih -> bye
+
+label farm
+wira(neutral): Tanahnya subur, percayalah. Cuma lupa cara bersyukur karena ditinggal terlalu lama.
+wira: Petak yang berpagar itu dulu kebun lobak terbaik se-lembah. Tanahnya sudah digemburkan, tinggal ditanami.
+wira(worried): Tapi hati-hati dengan hutan di sisi timur. Katanya pohon pinus di sana suka berbisik kalau malam.
+goto ask
+
+label sekar
+wira(worried): Sekar... dia pergi ke kota dengan janji akan kembali sebelum musim hujan.
+wira(neutral): Musim hujan datang dan pergi. Tapi dia tidak pernah lupa menitipkan kunci ladang ini padaku.
+wira(happy): Rupanya dia sudah tahu siapa penggantinya.
+goto ask
+
+label why
+wira(worried): Tiga tahun lalu kemarau panjang. Sumur lembah kering, panen gagal di semua ladang.
+wira: Sekar meminjam pada Pak Rentenir untuk menggali ulang sumur itu. Bukan untuk dirinya sendiri, untuk kita semua.
+wira(neutral): Sebab itu utangnya sebesar itu. Dan sebab itu aku tidak pernah menyalahkannya.
+goto ask
+
+label secret
+wira(surprised): Kau sudah sampai ke hutan pinus? Lalu kau pasti dengar soal lampu-lampu kecil itu.
+wira(neutral): Itu lentera Sekar. Dia menandai jalur ke kota di sana, supaya hasil panen lembah bisa dijual langsung tanpa tengkulak.
+wira(happy): Dia tidak kabur, Nak. Dia sedang membangun jalan untuk kita. Tugasmu: tetap hidup, dan lunasi utangnya.
+goto ask
+
+label todo
+wira(neutral): Pertama, kenali dulu tanahmu. Baca papan di dekat perempatan jalan itu.
+wira: Lalu temui Mira di tepi kolam. Anak itu tahu semua kabar lembah ini, dan ikannya selalu lebih banyak dari yang dia akui.
+goto ask
+
+label gift
+set wira_gift = true
+wira(happy): Hampir lupa! Ini, sisa benih lobak dari gudangku. Jangan sampai dimakan tikus lagi.
+emit give_item turnip_seed 5
+wira: Tanam di tanah gembur, siram tiap pagi. Sisanya urusan matahari.
+goto ask
+
+label bye
+if mira_met goto bye_mira
+wira(happy): Sama-sama, {player_name}. Pintuku selalu terbuka, kalau kau butuh teh.
+goto done
+
+label bye_mira
+wira(happy): Sudah bertemu Mira, ya? Bagus. Berarti kau sudah dapat satu teman di lembah ini.
+
+label done
+hide wira
+end

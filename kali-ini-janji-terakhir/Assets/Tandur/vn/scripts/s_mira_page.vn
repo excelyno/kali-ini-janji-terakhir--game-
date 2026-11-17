@@ -1,0 +1,21 @@
+# Story beat: a torn page of Sekar's ledger.
+label start
+set mira_met = true
+show mira at=center expr=worried
+mira: Akhirnya. Aku menunggumu sejak kabut tersingkap semalam.
+mira(neutral): Lihat ini. Tersangkut di jaringku pagi tadi: sobekan halaman buku. Tulisannya tangan Sekar.
+: "...sumur selesai. Kincir bulan depan. Kalau jalan ke kota jadi, lembah tak perlu tengkulak lagi. H. bilang hitunganku nekat. H. selalu bilang begitu, lalu tetap meminjamkan."
+mira(surprised): Siapa "H"? Di lembah ini tak ada yang namanya berawalan H... setahuku.
+menu
+* Kau kelihatan menghindari Pak Rentenir -> dislike
+* Ayo kita cari sisa halamannya -> search
+
+label dislike
+mira(worried): Aku tidak membencinya. Hanya lelah mendengar orang berbisik tiap kali dia lewat.
+mira(neutral): Sudahlah. Itu urusanku.
+
+label search
+mira(happy): Sekar suka menitipkan kenangan pada benda-benda tua. Sumur dekat rumahmu, kincir di tenggara, orang-orangan sawah di kebunmu.
+mira: Periksa ketiganya. Aku jaga dermaga, siapa tahu ada halaman lain yang hanyut.
+hide mira
+end

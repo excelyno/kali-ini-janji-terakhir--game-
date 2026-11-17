@@ -1,0 +1,17 @@
+label start
+if act >= 2 and not mem_tree goto memory
+: Pohon raksasa yang sudah sangat tua. Batangnya berongga, cukup untuk seorang anak bersembunyi.
+: Akar-akarnya menjalar sejauh mata memandang. Pohon ini menahan tanah bukit agar tidak longsor.
+end
+
+label memory
+bg sepia
+wait 0.4
+: Di dalam rongga pohon, ukiran kecil di kayu: dua nama, dan sebuah tanggal yang sudah pudar.
+: "Sekar dan Wira. Kami berjanji menjaga hutan ini selama ladang di bawahnya masih hidup."
+: Jadi Kakek Wira tahu lebih banyak dari yang ia ceritakan.
+bg none
+emit memory tree
+set mem_tree = true
+: (Kenangan Sekar ditemukan.)
+end

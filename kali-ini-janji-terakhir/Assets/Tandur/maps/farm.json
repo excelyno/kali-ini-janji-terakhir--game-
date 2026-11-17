@@ -1,0 +1,2362 @@
+{
+ "name": "Ladang Sekar",
+ "ground": [
+  "gggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggwwwgggggggggggggggggggggggggggg",
+  "gggggggggggggggwwwgggggggggggggggggggggggggggg",
+  "gggggggggggggggwwwgggggggggggggggggggggsgggggg",
+  "ggggggggggggggggwgggggggggggggggggggsssssssggg",
+  "ggggggggggggggggwgggggggggggggggggssswwwwwsssg",
+  "ggggggggggggggggwgggggggggggggggggsswwwwwwwssg",
+  "ggggggggggggggggwggggggggggggggggsswwwwwwbwwss",
+  "gggggggggdggggggwggggggggggggggdbbbbbbbbbbwwss",
+  "gggggggggdggggggwggggggggggggggdgsswwwwwwbwwss",
+  "gggggggggdggggggwggggggggggggggdggsswwwwwwwssg",
+  "gggggggggdggggggwggggggggggggggdggssswwwwwsssg",
+  "gggggggggdddddddbddddddddggggggdggggsssssssggg",
+  "ggggggggggggggggwgggggggdggggggdgggggggsgggggg",
+  "ggggggggggggggggwgggggcccccggggddddggggggggggg",
+  "gggggggggwwwwgggwgggggcccccdddddgggggggggggggg",
+  "ggggggggwwwwwwwwwgggggcccccggggggggggggggggggg",
+  "gggggggggwwwwgggggggggccccccccgggggggggggggggg",
+  "ggggggggggggggggggddddccccccccgggggggggggggggg",
+  "ggggdgggggggggggggdgggggggdddddddggggggggggggg",
+  "ggggdddddddddddddddgggggggggggggdggggggggggggg",
+  "ggggggggggggggggggdgggggggggggggdggggggggggggg",
+  "ggggggggggggggggggdgggggggggggggdggggggggggggg",
+  "ggggggggggggggggggdgggggggggggggdggggggggggggg",
+  "ggggggggggggggffffffffffggggggggdggggggggggggg",
+  "ggggggggggggggffffffffffggggggggdggggggggggggg",
+  "ggggggggggggggffffffffffggggggggdddddggggggggg",
+  "ggggggggggggggffffffffffgggggggggggggggggggggg",
+  "ggggggggggggggffffffffffgggggggggggggggggggggg",
+  "ggggggggggggggffffffffffgggppgppgppggggggggggg",
+  "gggggggggggggggggggggggggggppgppgppggggggggggg",
+  "ggggggggggggggggggdggggggggppgppgppggggggggggg",
+  "ggggggggggggggggggdggggggggggggggggggggggggggg",
+  "gggggggggddddddddddggggggggppgppgppggggggggggg",
+  "gggggggggggggggggggggggggggppgppgppggggggggggg",
+  "gggggggggggggggggggggggggggppgppgppggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggg",
+  "gggggggggggggggggggggggggggggggggggggggggggggg"
+ ],
+ "spawn": [
+  9,
+  9
+ ],
+ "objects": [
+  {
+   "type": "tall_grass_1",
+   "x": 2,
+   "y": 0
+  },
+  {
+   "type": "bush",
+   "x": 5,
+   "y": 0
+  },
+  {
+   "type": "grass_tuft",
+   "x": 11,
+   "y": 0
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 12,
+   "y": 0
+  },
+  {
+   "type": "reeds",
+   "x": 13,
+   "y": 0
+  },
+  {
+   "type": "rock",
+   "x": 14,
+   "y": 0
+  },
+  {
+   "type": "reeds",
+   "x": 16,
+   "y": 0
+  },
+  {
+   "type": "rock",
+   "x": 18,
+   "y": 0
+  },
+  {
+   "type": "bamboo",
+   "x": 20,
+   "y": 0
+  },
+  {
+   "type": "bamboo",
+   "x": 22,
+   "y": 0
+  },
+  {
+   "type": "bamboo",
+   "x": 24,
+   "y": 0
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 27,
+   "y": 0
+  },
+  {
+   "type": "fern",
+   "x": 35,
+   "y": 0
+  },
+  {
+   "type": "tree_pine",
+   "x": 38,
+   "y": 0
+  },
+  {
+   "type": "mushroom",
+   "x": 40,
+   "y": 0
+  },
+  {
+   "type": "tree_pine",
+   "x": 41,
+   "y": 0
+  },
+  {
+   "type": "mushroom",
+   "x": 42,
+   "y": 0
+  },
+  {
+   "type": "fern",
+   "x": 44,
+   "y": 0
+  },
+  {
+   "type": "tree_oak",
+   "x": 4,
+   "y": 1
+  },
+  {
+   "type": "grass_tuft",
+   "x": 13,
+   "y": 1
+  },
+  {
+   "type": "bush",
+   "x": 14,
+   "y": 1
+  },
+  {
+   "type": "reeds",
+   "x": 19,
+   "y": 1
+  },
+  {
+   "type": "grass_tuft",
+   "x": 23,
+   "y": 1
+  },
+  {
+   "type": "bamboo",
+   "x": 26,
+   "y": 1
+  },
+  {
+   "type": "tree_birch",
+   "x": 27,
+   "y": 1
+  },
+  {
+   "type": "grass_tuft",
+   "x": 28,
+   "y": 1
+  },
+  {
+   "type": "bamboo",
+   "x": 29,
+   "y": 1
+  },
+  {
+   "type": "tree_birch",
+   "x": 32,
+   "y": 1
+  },
+  {
+   "type": "tree_pine",
+   "x": 36,
+   "y": 1
+  },
+  {
+   "type": "tree_pine",
+   "x": 43,
+   "y": 1
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 44,
+   "y": 1
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 1
+  },
+  {
+   "type": "tree_oak",
+   "x": 0,
+   "y": 2
+  },
+  {
+   "type": "flower_blue",
+   "x": 2,
+   "y": 2
+  },
+  {
+   "type": "tree_oak",
+   "x": 7,
+   "y": 2
+  },
+  {
+   "type": "flower_blue",
+   "x": 8,
+   "y": 2
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 9,
+   "y": 2
+  },
+  {
+   "type": "flower_blue",
+   "x": 13,
+   "y": 2
+  },
+  {
+   "type": "lilypad_1",
+   "x": 16,
+   "y": 2
+  },
+  {
+   "type": "shrine",
+   "x": 19,
+   "y": 2
+  },
+  {
+   "type": "bamboo",
+   "x": 21,
+   "y": 2
+  },
+  {
+   "type": "bamboo",
+   "x": 23,
+   "y": 2
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 25,
+   "y": 2
+  },
+  {
+   "type": "fern",
+   "x": 37,
+   "y": 2
+  },
+  {
+   "type": "tree_pine",
+   "x": 38,
+   "y": 2
+  },
+  {
+   "type": "fern",
+   "x": 45,
+   "y": 2
+  },
+  {
+   "type": "flower_white",
+   "x": 21,
+   "y": 3
+  },
+  {
+   "type": "flower_red",
+   "x": 22,
+   "y": 3
+  },
+  {
+   "type": "flower_white",
+   "x": 23,
+   "y": 3
+  },
+  {
+   "type": "flower_red",
+   "x": 24,
+   "y": 3
+  },
+  {
+   "type": "grass_tuft",
+   "x": 34,
+   "y": 3
+  },
+  {
+   "type": "tree_pine",
+   "x": 41,
+   "y": 3
+  },
+  {
+   "type": "tree_pine",
+   "x": 43,
+   "y": 3
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 3
+  },
+  {
+   "type": "mushroom",
+   "x": 3,
+   "y": 4
+  },
+  {
+   "type": "tree_sakura",
+   "x": 5,
+   "y": 4
+  },
+  {
+   "type": "tree_sakura",
+   "x": 13,
+   "y": 4
+  },
+  {
+   "type": "reeds",
+   "x": 18,
+   "y": 4
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 18,
+   "y": 4
+  },
+  {
+   "type": "rock",
+   "x": 19,
+   "y": 4
+  },
+  {
+   "type": "flower_white",
+   "x": 20,
+   "y": 4
+  },
+  {
+   "type": "tree_birch",
+   "x": 22,
+   "y": 4
+  },
+  {
+   "type": "flower_white",
+   "x": 23,
+   "y": 4
+  },
+  {
+   "type": "flower_blue",
+   "x": 26,
+   "y": 4
+  },
+  {
+   "type": "tree_birch",
+   "x": 27,
+   "y": 4
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 29,
+   "y": 4
+  },
+  {
+   "type": "flower_yellow",
+   "x": 30,
+   "y": 4
+  },
+  {
+   "type": "tree_birch",
+   "x": 31,
+   "y": 4
+  },
+  {
+   "type": "reeds",
+   "x": 38,
+   "y": 4
+  },
+  {
+   "type": "reeds",
+   "x": 41,
+   "y": 4
+  },
+  {
+   "type": "grass_tuft",
+   "x": 0,
+   "y": 5
+  },
+  {
+   "type": "tree_palm",
+   "x": 33,
+   "y": 5
+  },
+  {
+   "type": "reeds",
+   "x": 34,
+   "y": 5
+  },
+  {
+   "type": "lilypad_1",
+   "x": 38,
+   "y": 5
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 1,
+   "y": 6
+  },
+  {
+   "type": "tree_oak",
+   "x": 2,
+   "y": 6
+  },
+  {
+   "type": "bush_berry",
+   "x": 3,
+   "y": 6
+  },
+  {
+   "type": "flower_red",
+   "x": 4,
+   "y": 6
+  },
+  {
+   "type": "house",
+   "x": 8,
+   "y": 6
+  },
+  {
+   "type": "woodpile",
+   "x": 12,
+   "y": 6
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 15,
+   "y": 6
+  },
+  {
+   "type": "lilypad_0",
+   "x": 16,
+   "y": 6
+  },
+  {
+   "type": "flower_white",
+   "x": 25,
+   "y": 6
+  },
+  {
+   "type": "lamp_post",
+   "x": 31,
+   "y": 6
+  },
+  {
+   "type": "lilypad_0",
+   "x": 36,
+   "y": 6
+  },
+  {
+   "type": "lilypad_0",
+   "x": 42,
+   "y": 6
+  },
+  {
+   "type": "fern",
+   "x": 0,
+   "y": 7
+  },
+  {
+   "type": "barrel",
+   "x": 7,
+   "y": 7
+  },
+  {
+   "type": "barrel",
+   "x": 11,
+   "y": 7
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 17,
+   "y": 7
+  },
+  {
+   "type": "tree_birch",
+   "x": 21,
+   "y": 7
+  },
+  {
+   "type": "grass_tuft",
+   "x": 24,
+   "y": 7
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 25,
+   "y": 7
+  },
+  {
+   "type": "barrel",
+   "x": 33,
+   "y": 7
+  },
+  {
+   "type": "reeds",
+   "x": 44,
+   "y": 7
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 1,
+   "y": 8
+  },
+  {
+   "type": "flower_red",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "type": "mushroom",
+   "x": 3,
+   "y": 8
+  },
+  {
+   "type": "clothesline",
+   "x": 5,
+   "y": 8
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 14,
+   "y": 8
+  },
+  {
+   "type": "flower_white",
+   "x": 23,
+   "y": 8
+  },
+  {
+   "type": "reeds",
+   "x": 45,
+   "y": 8
+  },
+  {
+   "type": "tree_oak",
+   "x": 2,
+   "y": 9
+  },
+  {
+   "type": "flowerbed",
+   "x": 7,
+   "y": 9
+  },
+  {
+   "type": "flowerbed",
+   "x": 11,
+   "y": 9
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 17,
+   "y": 9
+  },
+  {
+   "type": "tree_birch",
+   "x": 24,
+   "y": 9
+  },
+  {
+   "type": "flower_red",
+   "x": 26,
+   "y": 9
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 27,
+   "y": 9
+  },
+  {
+   "type": "crates",
+   "x": 32,
+   "y": 9
+  },
+  {
+   "type": "reeds",
+   "x": 33,
+   "y": 9
+  },
+  {
+   "type": "tree_palm",
+   "x": 45,
+   "y": 9
+  },
+  {
+   "type": "fern",
+   "x": 0,
+   "y": 10
+  },
+  {
+   "type": "flower_blue",
+   "x": 3,
+   "y": 10
+  },
+  {
+   "type": "bush",
+   "x": 4,
+   "y": 10
+  },
+  {
+   "type": "well",
+   "x": 12,
+   "y": 10
+  },
+  {
+   "type": "flower_red",
+   "x": 21,
+   "y": 10
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 23,
+   "y": 10
+  },
+  {
+   "type": "grass_tuft",
+   "x": 26,
+   "y": 10
+  },
+  {
+   "type": "boat",
+   "x": 37,
+   "y": 10
+  },
+  {
+   "type": "lilypad_1",
+   "x": 40,
+   "y": 10
+  },
+  {
+   "type": "lilypad_0",
+   "x": 42,
+   "y": 10
+  },
+  {
+   "type": "tree_banana",
+   "x": 5,
+   "y": 11
+  },
+  {
+   "type": "tree_banana",
+   "x": 7,
+   "y": 11
+  },
+  {
+   "type": "lamp_post",
+   "x": 10,
+   "y": 11
+  },
+  {
+   "type": "lamp_post",
+   "x": 19,
+   "y": 11
+  },
+  {
+   "type": "lamp_post",
+   "x": 30,
+   "y": 11
+  },
+  {
+   "type": "reeds",
+   "x": 34,
+   "y": 11
+  },
+  {
+   "type": "reeds",
+   "x": 43,
+   "y": 11
+  },
+  {
+   "type": "reeds",
+   "x": 44,
+   "y": 11
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 45,
+   "y": 11
+  },
+  {
+   "type": "stump",
+   "x": 2,
+   "y": 12
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 7,
+   "y": 12
+  },
+  {
+   "type": "grass_tuft",
+   "x": 27,
+   "y": 12
+  },
+  {
+   "type": "house_green",
+   "x": 33,
+   "y": 12
+  },
+  {
+   "type": "reeds",
+   "x": 37,
+   "y": 12
+  },
+  {
+   "type": "reeds",
+   "x": 38,
+   "y": 12
+  },
+  {
+   "type": "reeds",
+   "x": 40,
+   "y": 12
+  },
+  {
+   "type": "tree_palm",
+   "x": 43,
+   "y": 12
+  },
+  {
+   "type": "mushroom",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 0,
+   "y": 13
+  },
+  {
+   "type": "tree_banana",
+   "x": 5,
+   "y": 13
+  },
+  {
+   "type": "noticeboard",
+   "x": 21,
+   "y": 13
+  },
+  {
+   "type": "flag",
+   "x": 23,
+   "y": 13
+  },
+  {
+   "type": "flag",
+   "x": 25,
+   "y": 13
+  },
+  {
+   "type": "clothesline",
+   "x": 37,
+   "y": 13
+  },
+  {
+   "type": "tree_palm",
+   "x": 38,
+   "y": 13
+  },
+  {
+   "type": "tree_oak",
+   "x": 1,
+   "y": 14
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 5,
+   "y": 14
+  },
+  {
+   "type": "tree_willow",
+   "x": 7,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "type": "reeds",
+   "x": 10,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 11,
+   "y": 14
+  },
+  {
+   "type": "flower_red",
+   "x": 12,
+   "y": 14
+  },
+  {
+   "type": "flower_blue",
+   "x": 15,
+   "y": 14
+  },
+  {
+   "type": "grass_tuft",
+   "x": 15,
+   "y": 14
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 15,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 17,
+   "y": 14
+  },
+  {
+   "type": "bench",
+   "x": 26,
+   "y": 14
+  },
+  {
+   "type": "lamp_post",
+   "x": 27,
+   "y": 14
+  },
+  {
+   "type": "flower_white",
+   "x": 41,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 42,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 43,
+   "y": 14
+  },
+  {
+   "type": "flower_yellow",
+   "x": 44,
+   "y": 14
+  },
+  {
+   "type": "fern",
+   "x": 0,
+   "y": 15
+  },
+  {
+   "type": "lilypad_0",
+   "x": 12,
+   "y": 15
+  },
+  {
+   "type": "flower_blue",
+   "x": 14,
+   "y": 15
+  },
+  {
+   "type": "flower_red",
+   "x": 15,
+   "y": 15
+  },
+  {
+   "type": "lamp_post",
+   "x": 21,
+   "y": 15
+  },
+  {
+   "type": "flower_white",
+   "x": 44,
+   "y": 15
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 0,
+   "y": 16
+  },
+  {
+   "type": "lilypad_1",
+   "x": 9,
+   "y": 16
+  },
+  {
+   "type": "lilypad_0",
+   "x": 11,
+   "y": 16
+  },
+  {
+   "type": "bench",
+   "x": 22,
+   "y": 16
+  },
+  {
+   "type": "flowerbed",
+   "x": 24,
+   "y": 16
+  },
+  {
+   "type": "barrel",
+   "x": 29,
+   "y": 16
+  },
+  {
+   "type": "tree_fruit",
+   "x": 38,
+   "y": 16
+  },
+  {
+   "type": "tree_fruit",
+   "x": 40,
+   "y": 16
+  },
+  {
+   "type": "tree_fruit",
+   "x": 42,
+   "y": 16
+  },
+  {
+   "type": "tree_oak",
+   "x": 0,
+   "y": 17
+  },
+  {
+   "type": "house_blue",
+   "x": 3,
+   "y": 17
+  },
+  {
+   "type": "woodpile",
+   "x": 6,
+   "y": 17
+  },
+  {
+   "type": "reeds",
+   "x": 7,
+   "y": 17
+  },
+  {
+   "type": "reeds",
+   "x": 16,
+   "y": 17
+  },
+  {
+   "type": "signpost",
+   "x": 17,
+   "y": 17
+  },
+  {
+   "type": "stall",
+   "x": 27,
+   "y": 17
+  },
+  {
+   "type": "crates",
+   "x": 29,
+   "y": 17
+  },
+  {
+   "type": "tree_banana",
+   "x": 35,
+   "y": 17
+  },
+  {
+   "type": "beehive",
+   "x": 44,
+   "y": 17
+  },
+  {
+   "type": "bench",
+   "x": 8,
+   "y": 18
+  },
+  {
+   "type": "reeds",
+   "x": 9,
+   "y": 18
+  },
+  {
+   "type": "flower_red",
+   "x": 10,
+   "y": 18
+  },
+  {
+   "type": "reeds",
+   "x": 10,
+   "y": 18
+  },
+  {
+   "type": "flower_red",
+   "x": 11,
+   "y": 18
+  },
+  {
+   "type": "flower_yellow",
+   "x": 12,
+   "y": 18
+  },
+  {
+   "type": "tree_willow",
+   "x": 14,
+   "y": 18
+  },
+  {
+   "type": "reeds",
+   "x": 17,
+   "y": 18
+  },
+  {
+   "type": "tree_fruit",
+   "x": 38,
+   "y": 18
+  },
+  {
+   "type": "tree_fruit",
+   "x": 40,
+   "y": 18
+  },
+  {
+   "type": "tree_fruit",
+   "x": 42,
+   "y": 18
+  },
+  {
+   "type": "lamp_post",
+   "x": 21,
+   "y": 19
+  },
+  {
+   "type": "tree_banana",
+   "x": 35,
+   "y": 19
+  },
+  {
+   "type": "beehive",
+   "x": 44,
+   "y": 19
+  },
+  {
+   "type": "beehive",
+   "x": 0,
+   "y": 20
+  },
+  {
+   "type": "flowerbed",
+   "x": 2,
+   "y": 20
+  },
+  {
+   "type": "lamp_post",
+   "x": 25,
+   "y": 20
+  },
+  {
+   "type": "cart",
+   "x": 28,
+   "y": 20
+  },
+  {
+   "type": "flower_blue",
+   "x": 34,
+   "y": 20
+  },
+  {
+   "type": "bush",
+   "x": 35,
+   "y": 20
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 36,
+   "y": 20
+  },
+  {
+   "type": "tree_fruit",
+   "x": 38,
+   "y": 20
+  },
+  {
+   "type": "tree_fruit",
+   "x": 40,
+   "y": 20
+  },
+  {
+   "type": "tree_fruit",
+   "x": 42,
+   "y": 20
+  },
+  {
+   "type": "lamp_post",
+   "x": 17,
+   "y": 21
+  },
+  {
+   "type": "tree_banana",
+   "x": 35,
+   "y": 21
+  },
+  {
+   "type": "fence_post",
+   "x": 1,
+   "y": 22
+  },
+  {
+   "type": "fence_x",
+   "x": 2,
+   "y": 22
+  },
+  {
+   "type": "fence_x",
+   "x": 3,
+   "y": 22
+  },
+  {
+   "type": "fence_x",
+   "x": 4,
+   "y": 22
+  },
+  {
+   "type": "fence_post",
+   "x": 5,
+   "y": 22
+  },
+  {
+   "type": "sign",
+   "x": 19,
+   "y": 22
+  },
+  {
+   "type": "pumpkin",
+   "x": 30,
+   "y": 22
+  },
+  {
+   "type": "lamp_post",
+   "x": 33,
+   "y": 22
+  },
+  {
+   "type": "flower_yellow",
+   "x": 40,
+   "y": 22
+  },
+  {
+   "type": "flower_red",
+   "x": 41,
+   "y": 22
+  },
+  {
+   "type": "flower_red",
+   "x": 42,
+   "y": 22
+  },
+  {
+   "type": "stump",
+   "x": 44,
+   "y": 22
+  },
+  {
+   "type": "fence_y",
+   "x": 1,
+   "y": 23
+  },
+  {
+   "type": "fence_y",
+   "x": 5,
+   "y": 23
+  },
+  {
+   "type": "haystack",
+   "x": 6,
+   "y": 23
+  },
+  {
+   "type": "fence_post",
+   "x": 13,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 14,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 15,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 16,
+   "y": 23
+  },
+  {
+   "type": "fence_post",
+   "x": 17,
+   "y": 23
+  },
+  {
+   "type": "fence_post",
+   "x": 19,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 20,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 21,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 22,
+   "y": 23
+  },
+  {
+   "type": "fence_x",
+   "x": 23,
+   "y": 23
+  },
+  {
+   "type": "fence_post",
+   "x": 24,
+   "y": 23
+  },
+  {
+   "type": "crates",
+   "x": 26,
+   "y": 23
+  },
+  {
+   "type": "barn",
+   "x": 27,
+   "y": 23
+  },
+  {
+   "type": "pumpkin",
+   "x": 30,
+   "y": 23
+  },
+  {
+   "type": "bush",
+   "x": 40,
+   "y": 23
+  },
+  {
+   "type": "grass_tuft",
+   "x": 42,
+   "y": 23
+  },
+  {
+   "type": "fence_y",
+   "x": 1,
+   "y": 24
+  },
+  {
+   "type": "fence_y",
+   "x": 5,
+   "y": 24
+  },
+  {
+   "type": "hay_bale",
+   "x": 10,
+   "y": 24
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 24
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 24
+  },
+  {
+   "type": "hay_bale",
+   "x": 26,
+   "y": 24
+  },
+  {
+   "type": "pumpkin",
+   "x": 31,
+   "y": 24
+  },
+  {
+   "type": "windmill",
+   "x": 36,
+   "y": 24
+  },
+  {
+   "type": "tree_pine",
+   "x": 44,
+   "y": 24
+  },
+  {
+   "type": "fence_y",
+   "x": 1,
+   "y": 25
+  },
+  {
+   "type": "fence_y",
+   "x": 5,
+   "y": 25
+  },
+  {
+   "type": "coop",
+   "x": 8,
+   "y": 25
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 25
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 25
+  },
+  {
+   "type": "hay_bale",
+   "x": 26,
+   "y": 25
+  },
+  {
+   "type": "haystack",
+   "x": 30,
+   "y": 25
+  },
+  {
+   "type": "fence_post",
+   "x": 1,
+   "y": 26
+  },
+  {
+   "type": "fence_x",
+   "x": 2,
+   "y": 26
+  },
+  {
+   "type": "fence_x",
+   "x": 3,
+   "y": 26
+  },
+  {
+   "type": "fence_x",
+   "x": 4,
+   "y": 26
+  },
+  {
+   "type": "fence_post",
+   "x": 5,
+   "y": 26
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 26
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 26
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 40,
+   "y": 26
+  },
+  {
+   "type": "bush_berry",
+   "x": 43,
+   "y": 26
+  },
+  {
+   "type": "hay_bale",
+   "x": 7,
+   "y": 27
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 27
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 27
+  },
+  {
+   "type": "scarecrow",
+   "x": 26,
+   "y": 27
+  },
+  {
+   "type": "hut",
+   "x": 33,
+   "y": 27
+  },
+  {
+   "type": "grass_tuft",
+   "x": 42,
+   "y": 27
+  },
+  {
+   "type": "rock",
+   "x": 43,
+   "y": 27
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 27
+  },
+  {
+   "type": "bamboo",
+   "x": 0,
+   "y": 28
+  },
+  {
+   "type": "tree_oak",
+   "x": 1,
+   "y": 28
+  },
+  {
+   "type": "mushroom",
+   "x": 2,
+   "y": 28
+  },
+  {
+   "type": "flower_white",
+   "x": 9,
+   "y": 28
+  },
+  {
+   "type": "flower_red",
+   "x": 10,
+   "y": 28
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 28
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 28
+  },
+  {
+   "type": "rock_big",
+   "x": 44,
+   "y": 28
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 2,
+   "y": 29
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 4,
+   "y": 29
+  },
+  {
+   "type": "grass_tuft",
+   "x": 5,
+   "y": 29
+  },
+  {
+   "type": "flower_red",
+   "x": 8,
+   "y": 29
+  },
+  {
+   "type": "flower_white",
+   "x": 9,
+   "y": 29
+  },
+  {
+   "type": "flower_yellow",
+   "x": 10,
+   "y": 29
+  },
+  {
+   "type": "fence_y",
+   "x": 13,
+   "y": 29
+  },
+  {
+   "type": "fence_y",
+   "x": 24,
+   "y": 29
+  },
+  {
+   "type": "rock",
+   "x": 38,
+   "y": 29
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 29
+  },
+  {
+   "type": "mushroom",
+   "x": 0,
+   "y": 30
+  },
+  {
+   "type": "bamboo",
+   "x": 2,
+   "y": 30
+  },
+  {
+   "type": "bush",
+   "x": 6,
+   "y": 30
+  },
+  {
+   "type": "flower_red",
+   "x": 7,
+   "y": 30
+  },
+  {
+   "type": "flower_white",
+   "x": 8,
+   "y": 30
+  },
+  {
+   "type": "bush",
+   "x": 9,
+   "y": 30
+  },
+  {
+   "type": "fence_post",
+   "x": 13,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 14,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 15,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 16,
+   "y": 30
+  },
+  {
+   "type": "fence_post",
+   "x": 17,
+   "y": 30
+  },
+  {
+   "type": "fence_post",
+   "x": 19,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 20,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 21,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 22,
+   "y": 30
+  },
+  {
+   "type": "fence_x",
+   "x": 23,
+   "y": 30
+  },
+  {
+   "type": "fence_post",
+   "x": 24,
+   "y": 30
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 36,
+   "y": 30
+  },
+  {
+   "type": "bush_berry",
+   "x": 39,
+   "y": 30
+  },
+  {
+   "type": "tree_maple",
+   "x": 0,
+   "y": 31
+  },
+  {
+   "type": "tent",
+   "x": 4,
+   "y": 31
+  },
+  {
+   "type": "flower_red",
+   "x": 6,
+   "y": 31
+  },
+  {
+   "type": "flower_yellow",
+   "x": 7,
+   "y": 31
+  },
+  {
+   "type": "flower_white",
+   "x": 8,
+   "y": 31
+  },
+  {
+   "type": "stump",
+   "x": 11,
+   "y": 31
+  },
+  {
+   "type": "grass_tuft",
+   "x": 37,
+   "y": 32
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 41,
+   "y": 32
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 32
+  },
+  {
+   "type": "bamboo",
+   "x": 1,
+   "y": 33
+  },
+  {
+   "type": "woodpile",
+   "x": 3,
+   "y": 33
+  },
+  {
+   "type": "campfire",
+   "x": 6,
+   "y": 33
+  },
+  {
+   "type": "grass_tuft",
+   "x": 22,
+   "y": 33
+  },
+  {
+   "type": "rock",
+   "x": 37,
+   "y": 33
+  },
+  {
+   "type": "rock_big",
+   "x": 41,
+   "y": 33
+  },
+  {
+   "type": "grass_tuft",
+   "x": 43,
+   "y": 33
+  },
+  {
+   "type": "log",
+   "x": 8,
+   "y": 34
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 22,
+   "y": 34
+  },
+  {
+   "type": "tree_oak",
+   "x": 0,
+   "y": 35
+  },
+  {
+   "type": "bamboo",
+   "x": 1,
+   "y": 35
+  },
+  {
+   "type": "tree_maple",
+   "x": 3,
+   "y": 35
+  },
+  {
+   "type": "log",
+   "x": 5,
+   "y": 35
+  },
+  {
+   "type": "grass_tuft",
+   "x": 14,
+   "y": 35
+  },
+  {
+   "type": "tree_oak",
+   "x": 16,
+   "y": 35
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 24,
+   "y": 35
+  },
+  {
+   "type": "tree_pine",
+   "x": 45,
+   "y": 35
+  },
+  {
+   "type": "fern",
+   "x": 0,
+   "y": 36
+  },
+  {
+   "type": "grass_tuft",
+   "x": 2,
+   "y": 36
+  },
+  {
+   "type": "grass_tuft",
+   "x": 10,
+   "y": 36
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 13,
+   "y": 36
+  },
+  {
+   "type": "tree_maple",
+   "x": 25,
+   "y": 36
+  },
+  {
+   "type": "rock",
+   "x": 41,
+   "y": 36
+  },
+  {
+   "type": "rock_big",
+   "x": 45,
+   "y": 36
+  },
+  {
+   "type": "bamboo",
+   "x": 2,
+   "y": 37
+  },
+  {
+   "type": "mushroom",
+   "x": 3,
+   "y": 37
+  },
+  {
+   "type": "tree_maple",
+   "x": 11,
+   "y": 37
+  },
+  {
+   "type": "grass_tuft",
+   "x": 15,
+   "y": 37
+  },
+  {
+   "type": "tall_grass_0",
+   "x": 18,
+   "y": 37
+  },
+  {
+   "type": "tree_oak",
+   "x": 19,
+   "y": 37
+  },
+  {
+   "type": "tree_maple",
+   "x": 22,
+   "y": 37
+  },
+  {
+   "type": "tall_grass_1",
+   "x": 23,
+   "y": 37
+  },
+  {
+   "type": "grass_tuft",
+   "x": 26,
+   "y": 37
+  },
+  {
+   "type": "grass_tuft",
+   "x": 35,
+   "y": 37
+  },
+  {
+   "type": "grass_tuft",
+   "x": 42,
+   "y": 37
+  },
+  {
+   "type": "grass_tuft",
+   "x": 44,
+   "y": 37
+  }
+ ],
+ "entities": [
+  {
+   "type": "npc",
+   "id": "wira",
+   "name": "Kakek Wira",
+   "sprite": "wira",
+   "x": 7,
+   "y": 19,
+   "facing": "down",
+   "script": "wira_talk",
+   "prompt": "Bicara",
+   "schedule": [
+    [
+     360,
+     7,
+     19,
+     "down"
+    ],
+    [
+     540,
+     20,
+     22,
+     "down"
+    ],
+    [
+     840,
+     23,
+     15,
+     "right"
+    ],
+    [
+     1080,
+     8,
+     19,
+     "down"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "mira",
+   "name": "Mira",
+   "sprite": "mira",
+   "x": 40,
+   "y": 8,
+   "facing": "left",
+   "script": "mira_talk",
+   "prompt": "Bicara",
+   "schedule": [
+    [
+     360,
+     40,
+     8,
+     "left"
+    ],
+    [
+     690,
+     24,
+     18,
+     "down"
+    ],
+    [
+     900,
+     40,
+     8,
+     "left"
+    ],
+    [
+     1170,
+     33,
+     15,
+     "down"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "darto",
+   "name": "Pak Darto",
+   "sprite": "darto",
+   "x": 26,
+   "y": 17,
+   "facing": "right",
+   "script": "darto_talk",
+   "prompt": "Belanja"
+  },
+  {
+   "type": "npc",
+   "id": "lastri",
+   "name": "Bu Lastri",
+   "sprite": "lastri",
+   "x": 36,
+   "y": 14,
+   "facing": "left",
+   "script": "lastri_talk",
+   "prompt": "Bicara",
+   "schedule": [
+    [
+     360,
+     36,
+     14,
+     "left"
+    ],
+    [
+     600,
+     13,
+     10,
+     "left"
+    ],
+    [
+     780,
+     36,
+     14,
+     "left"
+    ],
+    [
+     1020,
+     22,
+     17,
+     "right"
+    ],
+    [
+     1200,
+     34,
+     15,
+     "down"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "rentenir",
+   "name": "Pak Rentenir",
+   "sprite": "rentenir",
+   "x": 23,
+   "y": 19,
+   "facing": "up",
+   "script": "rentenir_talk",
+   "prompt": "Bayar utang",
+   "schedule": [
+    [
+     360,
+     23,
+     19,
+     "up"
+    ],
+    [
+     750,
+     25,
+     15,
+     "left"
+    ],
+    [
+     960,
+     23,
+     19,
+     "up"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "sari",
+   "name": "Bu Sari",
+   "sprite": "sari",
+   "x": 29,
+   "y": 32,
+   "facing": "down",
+   "script": "sari_talk",
+   "prompt": "Bicara",
+   "schedule": [
+    [
+     360,
+     29,
+     32,
+     "down"
+    ],
+    [
+     720,
+     32,
+     28,
+     "left"
+    ],
+    [
+     840,
+     32,
+     32,
+     "left"
+    ],
+    [
+     1050,
+     32,
+     28,
+     "left"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "joko",
+   "name": "Pak Joko",
+   "sprite": "joko",
+   "x": 36,
+   "y": 11,
+   "facing": "up",
+   "script": "joko_talk",
+   "prompt": "Bicara",
+   "schedule": [
+    [
+     330,
+     36,
+     11,
+     "up"
+    ],
+    [
+     1080,
+     26,
+     15,
+     "left"
+    ],
+    [
+     1260,
+     36,
+     11,
+     "up"
+    ]
+   ]
+  },
+  {
+   "type": "npc",
+   "id": "bayu",
+   "name": "Bayu",
+   "sprite": "bayu",
+   "x": 19,
+   "y": 15,
+   "facing": "down",
+   "script": "bayu_talk",
+   "prompt": "Bicara",
+   "wander": 3,
+   "speed": 1.9,
+   "schedule": [
+    [
+     360,
+     19,
+     15,
+     "down"
+    ],
+    [
+     660,
+     24,
+     20,
+     "down"
+    ],
+    [
+     900,
+     30,
+     10,
+     "down"
+    ],
+    [
+     1110,
+     34,
+     15,
+     "down"
+    ]
+   ]
+  },
+  {
+   "type": "interact",
+   "id": "home_door",
+   "x": 9,
+   "y": 8,
+   "script": "sleep",
+   "prompt": "Tidur"
+  },
+  {
+   "type": "interact",
+   "id": "sign_farm",
+   "x": 19,
+   "y": 22,
+   "script": "sign_farm",
+   "prompt": "Baca"
+  },
+  {
+   "type": "interact",
+   "id": "noticeboard",
+   "x": 21,
+   "y": 13,
+   "script": "noticeboard",
+   "prompt": "Baca"
+  },
+  {
+   "type": "interact",
+   "id": "well",
+   "x": 12,
+   "y": 10,
+   "script": "well",
+   "prompt": "Periksa"
+  },
+  {
+   "type": "interact",
+   "id": "scarecrow",
+   "x": 26,
+   "y": 27,
+   "script": "scarecrow",
+   "prompt": "Periksa"
+  },
+  {
+   "type": "interact",
+   "id": "windmill",
+   "x": 36,
+   "y": 26,
+   "script": "windmill",
+   "prompt": "Periksa"
+  },
+  {
+   "type": "interact",
+   "id": "spring",
+   "x": 19,
+   "y": 2,
+   "script": "spring",
+   "prompt": "Periksa"
+  },
+  {
+   "type": "interact",
+   "id": "signpost",
+   "x": 17,
+   "y": 17,
+   "script": "signpost",
+   "prompt": "Baca"
+  },
+  {
+   "type": "interact",
+   "id": "bench_square",
+   "x": 22,
+   "y": 16,
+   "script": "@sit",
+   "prompt": "Duduk"
+  },
+  {
+   "type": "interact",
+   "id": "bench_square2",
+   "x": 26,
+   "y": 14,
+   "script": "@sit",
+   "prompt": "Duduk"
+  },
+  {
+   "type": "interact",
+   "id": "bench_pond",
+   "x": 8,
+   "y": 18,
+   "script": "@sit",
+   "prompt": "Duduk"
+  },
+  {
+   "type": "interact",
+   "id": "campfire",
+   "x": 6,
+   "y": 33,
+   "script": "@sit",
+   "prompt": "Duduk di dekat api"
+  },
+  {
+   "type": "interact",
+   "id": "beehive",
+   "x": 44,
+   "y": 17,
+   "script": "beehive",
+   "prompt": "Periksa"
+  },
+  {
+   "type": "critter",
+   "kind": "chicken",
+   "x": 9,
+   "y": 27,
+   "radius": 2.5,
+   "count": 4
+  },
+  {
+   "type": "critter",
+   "kind": "chicken",
+   "x": 30,
+   "y": 20,
+   "radius": 2.0,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "goat",
+   "x": 3,
+   "y": 24,
+   "radius": 1.0,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "duck",
+   "x": 38,
+   "y": 6,
+   "radius": 2.5,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "duck",
+   "x": 10,
+   "y": 16,
+   "radius": 1.6,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "cat",
+   "x": 10,
+   "y": 10,
+   "radius": 3.0,
+   "count": 1
+  },
+  {
+   "type": "critter",
+   "kind": "dog",
+   "x": 24,
+   "y": 20,
+   "radius": 4.0,
+   "count": 1
+  },
+  {
+   "type": "critter",
+   "kind": "bird",
+   "x": 20,
+   "y": 16,
+   "radius": 4.0,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "bird",
+   "x": 29,
+   "y": 26,
+   "radius": 3.0,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "bird",
+   "x": 6,
+   "y": 12,
+   "radius": 3.5,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "bird",
+   "x": 40,
+   "y": 18,
+   "radius": 3.0,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 25,
+   "y": 6,
+   "radius": 3.0,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 9,
+   "y": 30,
+   "radius": 2.5,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 15,
+   "y": 16,
+   "radius": 3.0,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 24,
+   "y": 16,
+   "radius": 2.0,
+   "count": 2
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 40,
+   "y": 18,
+   "radius": 3.0,
+   "count": 3
+  },
+  {
+   "type": "critter",
+   "kind": "butterfly",
+   "x": 9,
+   "y": 9,
+   "radius": 2.2,
+   "count": 2
+  }
+ ]
+}

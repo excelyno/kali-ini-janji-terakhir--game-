@@ -1,0 +1,12 @@
+label start
+: Kasurmu hangat dan baunya seperti jerami kering. Tidur sekarang?
+menu
+* Tidur, sampai besok pagi -> sleep
+* Belum, masih ada kerjaan -> later
+
+label sleep
+emit sleep
+end
+
+label later
+end

@@ -1,0 +1,37 @@
+[
+  {"id": "q_till", "chapter": 1, "title": "Tanah yang Gembur", "giver": "Kakek Wira", "desc": "Cangkul 6 petak tanah di kebun berpagar.", "objectives": [{"type": "action", "kind": "till", "n": 6, "label": "Cangkul petak"}], "reward": {"gold": 30}, "lesson": "Tanah yang digemburkan membuat akar mudah menembus dan air meresap merata."},
+
+  {"id": "q_plant", "chapter": 1, "title": "Benih Pertama", "giver": "Kakek Wira", "requires": ["q_till"], "desc": "Tanam 6 benih di tanah yang sudah dicangkul. Beli benih di lapak Pak Darto.", "objectives": [{"type": "action", "kind": "plant", "n": 6, "label": "Tanam benih"}], "reward": {"gold": 20, "items": {"turnip_seed": 4}}, "lesson": "Satu benih kecil menyimpan seluruh tanaman. Jarak tanam yang rapi memudahkan perawatan."},
+
+  {"id": "q_water", "chapter": 1, "title": "Air Kehidupan", "giver": "Kakek Wira", "requires": ["q_plant"], "desc": "Siram tanaman 6 kali. Tanaman hanya tumbuh malam hari kalau sudah disiram.", "objectives": [{"type": "action", "kind": "water", "n": 6, "label": "Siram petak"}], "reward": {"gold": 25}, "lesson": "Tanaman butuh air untuk mengangkut makanan dari tanah. Menyiram sebelum tidur menghemat satu hari."},
+
+  {"id": "q_harvest", "chapter": 1, "title": "Panen Pertama", "giver": "Pak Darto", "requires": ["q_water"], "desc": "Panen 4 tanaman apa saja lewat minigame.", "objectives": [{"type": "harvest", "n": 4, "label": "Panen tanaman"}], "reward": {"gold": 60}, "lesson": "Panen yang hati-hati menjaga mutu. Mutu yang baik dijual dengan harga lebih tinggi."},
+
+  {"id": "q_sell", "chapter": 1, "title": "Pedagang Muda", "giver": "Pak Darto", "requires": ["q_harvest"], "desc": "Jual hasil panen sampai kamu mendapat 150 keping.", "objectives": [{"type": "earn", "n": 150, "label": "Keping dari penjualan"}], "reward": {"gold": 50}, "lesson": "Untung = harga jual dikurangi modal benih. Hitung dulu sebelum menanam."},
+
+  {"id": "q_first_pay", "chapter": 2, "title": "Cicilan Pertama", "giver": "Pak Rentenir", "requires": ["q_sell"], "desc": "Bayar utang ke Pak Rentenir sampai total 300 keping.", "objectives": [{"type": "paid_total", "n": 300, "label": "Total utang terbayar"}], "reward": {"gold": 80, "rings": 2}, "lesson": "Utang berbunga tiap musim. Makin cepat dicicil, makin sedikit bunga yang harus ditanggung. Kabut di tepi desa mulai menipis."},
+
+  {"id": "q_explore", "chapter": 2, "title": "Jelajah Desa", "giver": "Kakek Wira", "requires": ["q_till"], "desc": "Berjalan ke tepi desa dan temukan 2 wilayah baru.", "objectives": [{"type": "discover", "n": 2, "label": "Wilayah ditemukan"}], "reward": {"gold": 60}, "lesson": "Petani yang baik mengenal tanahnya: mana yang subur, mana yang berbatu, mana yang dekat air."},
+
+  {"id": "q_forest", "chapter": 2, "title": "Suara di Hutan", "giver": "Kakek Wira", "requires": ["q_explore"], "desc": "Temukan sebuah hutan kecil.", "objectives": [{"type": "discover", "biome": "forest", "n": 1, "label": "Hutan ditemukan"}], "reward": {"gold": 80}, "lesson": "Hutan menahan air dan mencegah longsor. Petani dan hutan saling membutuhkan."},
+
+  {"id": "q_fields", "chapter": 2, "title": "Lahan Baru", "giver": "Mira", "requires": ["q_explore"], "desc": "Temukan lahan terbuka yang bisa dijadikan kebun tambahan.", "objectives": [{"type": "discover", "biome": "fields", "n": 1, "label": "Lahan ditemukan"}], "reward": {"gold": 80}, "lesson": "Lahan yang lebih luas berarti panen lebih banyak, tapi juga butuh lebih banyak tenaga dan air."},
+
+  {"id": "q_quality", "chapter": 2, "title": "Panen Berkualitas", "giver": "Pak Darto", "requires": ["q_harvest"], "desc": "Panen 3 tanaman dengan hasil bintang 3.", "objectives": [{"type": "harvest", "min_stars": 3, "n": 3, "label": "Panen bintang 3"}], "reward": {"gold": 100}, "lesson": "Panen pelan dan tepat waktu menghasilkan mutu terbaik. Pembeli rela membayar lebih untuk hasil yang bagus."},
+
+  {"id": "q_tomato", "chapter": 3, "title": "Tomat Tanpa Henti", "giver": "Bu Lastri", "requires": ["q_quality"], "desc": "Panen 6 tomat. Tomat tumbuh ulang, jadi sekali menanam bisa berkali-kali memanen.", "objectives": [{"type": "harvest", "crop": "tomato", "n": 6, "label": "Panen tomat"}], "reward": {"gold": 120}, "lesson": "Tanaman yang berbuah berulang menghemat modal benih dan memberi penghasilan yang lebih stabil."},
+
+  {"id": "q_view", "chapter": 2, "title": "Dari Atas Bukit", "giver": "Kakek Wira", "requires": ["q_first_pay"], "min_act": 2, "desc": "Naiki tangga batu ke puncak bukit, lalu duduk di bangku tua di sana (tekan E).", "objectives": [{"type": "sit", "n": 1, "label": "Duduk di puncak"}], "reward": {"gold": 60}, "lesson": "Petani yang baik sesekali berhenti dan melihat ladangnya dari jauh. Dari atas, pola yang salah lebih mudah terlihat."},
+
+  {"id": "q_memories", "chapter": 2, "title": "Jejak Sekar", "giver": "Kakek Wira", "requires": ["q_first_pay"], "min_act": 2, "desc": "Periksa benda-benda tua di desa: sumur, kincir, orang-orangan sawah, pohon raksasa di hutan.", "objectives": [{"type": "memory", "n": 3, "label": "Kenangan ditemukan"}], "reward": {"gold": 150}, "lesson": "Sekar berutang untuk membangun sumur bersama. Utang untuk aset yang menghasilkan berbeda dengan utang untuk kesenangan."},
+
+  {"id": "q_falls", "chapter": 2, "title": "Suara Air", "giver": "Mira", "requires": ["q_explore"], "min_act": 2, "desc": "Temukan air terjun di barat desa.", "objectives": [{"type": "discover", "biome": "falls", "n": 1, "label": "Air terjun ditemukan"}], "reward": {"gold": 100}, "lesson": "Air mengalir dari tempat tinggi ke rendah. Petani zaman dulu membuat terasering agar air turun pelan dan tanah tidak hanyut."},
+
+  {"id": "q_drought", "chapter": 3, "title": "Bertahan di Musim Kering", "giver": "Bu Lastri", "min_act": 3, "desc": "Kemarau datang. Hasilkan 600 keping dari penjualan selama kemarau.", "objectives": [{"type": "earn", "n": 600, "label": "Keping saat kemarau"}], "reward": {"gold": 200, "rings": 4}, "lesson": "Saat barang langka, harganya naik. Petani yang punya tabungan bisa tetap menanam ketika yang lain berhenti."},
+
+  {"id": "q_lantern", "chapter": 4, "title": "Cahaya di Ujung Jalan", "giver": "Mira", "min_act": 4, "desc": "Lentera Sekar menyala. Cari lentera di tepi air terjun dan periksa.", "objectives": [{"type": "memory", "n": 1, "label": "Kenangan terakhir"}], "reward": {"gold": 150}, "lesson": "Menjual langsung ke pembeli tanpa perantara membuat petani mendapat bagian harga yang lebih adil."},
+
+  {"id": "q_half", "chapter": 3, "title": "Separuh Jalan", "giver": "Pak Rentenir", "requires": ["q_first_pay"], "desc": "Lunasi sampai total 3.000 keping utang terbayar.", "objectives": [{"type": "paid_total", "n": 3000, "label": "Total utang terbayar"}], "reward": {"gold": 300, "rings": 3}, "lesson": "Disiplin membayar utang membuka kepercayaan. Dengan utang lebih ringan, kamu bisa berani berinvestasi."},
+
+  {"id": "q_free", "chapter": 4, "title": "Bebas Utang", "giver": "Pak Rentenir", "requires": ["q_half"], "desc": "Lunasi seluruh utang warisan.", "objectives": [{"type": "paid_total", "n": 6000, "label": "Total utang terbayar"}], "reward": {"gold": 500, "rings": 5}, "lesson": "Kebebasan finansial dimulai dari mencatat pemasukan, menahan pengeluaran, dan melunasi kewajiban tepat waktu."}
+]

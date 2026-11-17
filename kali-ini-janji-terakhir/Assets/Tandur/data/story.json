@@ -1,0 +1,23 @@
+[
+  {"id": "b_wira", "act": 0, "text": "Temui Kakek Wira, tetanggamu", "target": {"npc": "wira"}, "talk": "s_wira_meet", "done": {"talk": true}},
+  {"id": "b_till", "act": 0, "text": "Cangkul 6 petak di kebun berpagar", "target": {"tile": [18, 25]}, "done": {"quest": "q_till"}},
+  {"id": "b_darto", "act": 0, "text": "Ambil benih di lapak Pak Darto", "target": {"npc": "darto"}, "talk": "s_darto_meet", "done": {"talk": true}},
+  {"id": "b_grow", "act": 0, "text": "Tanam, siram tiap hari, lalu panen 4 tanaman", "target": {"tile": [18, 25]}, "done": {"quest": "q_harvest"}},
+  {"id": "b_chickens", "act": 1, "morning": true, "intro": "s_chickens", "outro": "s_chickens_done", "spawn": "chickens", "text": "Tangkap 3 ayam Kakek Wira yang lepas", "done": {"var": "chickens_caught", "min": 3}, "reward": {"gold": 40, "items": {"carrot_seed": 3}}},
+  {"id": "b_sell", "act": 1, "text": "Jual panenmu ke Pak Darto sampai dapat 150 keping", "target": {"npc": "darto"}, "done": {"quest": "q_sell"}},
+  {"id": "b_rentenir", "act": 1, "text": "Hadapi Pak Rentenir di alun-alun", "target": {"npc": "rentenir"}, "talk": "s_rentenir_meet", "done": {"talk": true}},
+  {"id": "b_pay", "act": 1, "text": "Bayar cicilan pertama: total 300 keping", "target": {"npc": "rentenir"}, "done": {"quest": "q_first_pay"}},
+  {"id": "b_mira", "act": 2, "text": "Mira menemukan sesuatu. Temui dia", "target": {"npc": "mira"}, "talk": "s_mira_page", "done": {"talk": true}},
+  {"id": "b_memories", "act": 2, "text": "Cari 3 jejak Sekar: sumur, kincir, orang-orangan sawah", "target": {"memory": true}, "done": {"var": "memories", "min": 3}},
+  {"id": "b_dream", "act": 2, "morning": true, "intro": "s_dream", "text": "Tanyakan mimpimu pada Kakek Wira", "target": {"npc": "wira"}, "talk": "s_wira_truth", "done": {"talk": true}},
+  {"id": "b_hill", "act": 2, "text": "Naik ke Bukit Batu di utara, duduk di bangku tua", "target": {"script": "@sit", "tile": [8, -9]}, "outro": "s_hill", "done": {"quest": "q_view"}},
+  {"id": "b_prepare", "act": 2, "text": "Menabunglah. Kakek bilang musim akan berubah", "done": {"act": 3}},
+  {"id": "b_meeting", "act": 3, "text": "Rapat darurat: datang ke alun-alun", "target": {"tile": [24, 16]}, "at": {"tile": [24, 16], "r": 3.0, "script": "s_meeting"}, "done": {"flag": "meeting_done"}},
+  {"id": "b_kitchen", "act": 3, "text": "Bawa 5 hasil panen untuk dapur umum Bu Lastri", "target": {"npc": "lastri"}, "talk": "s_kitchen", "done": {"flag": "kitchen_done"}, "reward": {"gold": 120}},
+  {"id": "b_drought", "act": 3, "text": "Bertahan: hasilkan 600 keping selama kemarau", "target": {"npc": "darto"}, "done": {"quest": "q_drought"}},
+  {"id": "b_rain", "act": 3, "text": "Bertahan sampai hujan kembali", "done": {"act": 4}},
+  {"id": "b_lantern", "act": 4, "text": "Ikuti lentera ke air terjun di barat", "target": {"script": "lentera", "tile": [-27, 21]}, "done": {"flag": "mem_lantern"}},
+  {"id": "b_truth", "act": 4, "text": "Tunjukkan surat Sekar pada Pak Rentenir", "target": {"npc": "rentenir"}, "talk": "s_truth", "done": {"talk": true}, "reward": {"gold": 300}},
+  {"id": "b_free", "act": 4, "text": "Lunasi seluruh utang warisan", "target": {"npc": "rentenir"}, "done": {"flag": "debt_free"}},
+  {"id": "b_home", "act": 5, "text": "Lembah ini rumahmu. Teruslah menanam", "done": {"flag": "never"}}
+]
